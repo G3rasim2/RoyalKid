@@ -1,0 +1,246 @@
+.info-contacts
+	margin-top: 0px
+	margin-bottom: 469px
+	position: relative
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__wrap h1
+		font-size: 18px
+	&__wrap p
+		font-size: 14px
+		margin: 0
+		margin-top: 7px
+	&__wrap a
+		text-decoration: none
+		font-size: 14px
+		color: #413D43
+		margin: 0
+		margin-top: 7px
+		margin-right: 10px
+	&__info
+		width: 290px
+		margin-left: 0
+		margin-bottom: 40px
+	&__info > div,
+	&__email-block
+		margin-top: 25px
+	&__info > div:first-child
+		margin-top: 10px
+	&__address h1
+		background: url(../img/marker.svg) no-repeat 3px center
+		background-size: 20px
+		padding-left: 30px
+	&__time h1
+		background: url(../img/clock.svg) no-repeat 2px center
+		background-size: 20px
+		padding-left: 30px
+	&__phone-block h1
+		background: url(../img/phone-call.svg) no-repeat 2px center
+		background-size: 20px
+		padding-left: 30px
+	&__email-block h1
+		background: url(../img/email.svg) no-repeat 0 center
+		background-size: 25px
+		padding-left: 30px
+
+.info-contacts__question
+	position: absolute
+	top: 100%
+	background: #FFEFEA
+	width: 100%
+	border-radius: 0
+
+.question
+	&__wrap
+		padding: 20px
+		padding-top: 30px
+		padding-bottom: 30px
+		display: flex
+		flex-direction: column
+	&__wrap h1
+		margin-bottom: 20px
+	&__wrap p
+		font-size: 14px
+		margin-top: 10px
+	&__wrap div
+		margin-top: 40px
+	&__input
+		font-size: 14px
+		padding: 22px 30px
+		width: 100%
+		background: transparent
+		border-radius: 50px
+		border: 1px solid #B9B9B9
+		margin-bottom: 10px
+	&__input::placeholder
+		font-size: 14px
+		color: #442751
+	&__wrap textarea
+		font-size: 14px
+		border: none
+		background: transparent
+		border: 1px solid #B9B9B9
+		border-radius: 10px
+		padding: 20px 30px
+		resize: none
+		height: 95px
+	&__wrap textarea::placeholder
+		font-size: 14px
+		color: #442751
+	&__btn
+		font-size: 14px
+		margin-top: 20px
+		color: #fff
+		border: none
+		padding: 22px 20px
+		width: 100%
+		background: #442751
+		border-radius: 50px
+		cursor: pointer
+	&__btn:hover,
+	&__btn:focus
+		font-weight: 500
+		box-shadow: 0 0 15px rgba(#000, .1)
+	&__btn:active
+		font-weight: 400
+		box-shadow: none
+	&__wrap label
+		display: flex
+		margin-top: 10px
+		position: relative
+	&__wrap label p
+		margin: 0
+		padding-left: 30px
+		font-size: 12px
+		color: rgba(#1D3B3C, .55)
+	&__wrap label p a
+		font-size: 12px
+		margin: 0
+		font-weight: 500
+		color: rgba(#1D3B3C, .55)
+		text-decoration: underline
+	&__wrap input[type="checkbox"] + span
+		position: absolute
+		top: 3px
+		left: 0
+		width: 24px
+		height: 24px
+		border-radius: 50%
+		border: 1px solid #442751
+	&__wrap input[type="checkbox"]:checked + span:before
+		content: ''
+		position: absolute
+		top: calc(50% - 8px)
+		left: calc(50% - 8px)
+		width: 16px
+		height: 16px
+		border-radius: 50%
+		background: #442751
+
+@media (min-width: 800px)
+	.info-contacts
+		margin-top: 50px
+		margin-bottom: 90px
+		&__wrap
+			flex-direction: row
+			align-items: flex-start
+			justify-content: space-between
+		&__info > div,
+		&__email-block
+			margin-top: 40px
+		&__info
+			background: #FFFFFF
+			border-radius: 10px
+			padding-top: 30px
+			padding-left: 20px
+			padding-right: 20px
+			padding-bottom: 75px
+			width: 70%
+			max-width: 937px
+			margin: 0
+			margin-right: 10px
+
+	.info-contacts__question
+		width: auto
+		max-width: 599px
+		margin: 0
+		margin-left: 10px
+		position: relative
+		top: auto
+		border-radius: 10px
+		
+	.question
+		&__wrap label br
+			display: none
+
+	
+
+@media (min-width: 1000px)
+	.info-contacts
+		&__wrap
+		&__wrap h1
+			font-size: 30px
+		&__wrap p
+			font-size: 18px
+			margin-top: 20px
+		&__wrap a
+			font-size: 18px
+			display: inline-block
+			margin-top: 20px
+		&__info
+			padding-left: 60px
+		&__phone
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+			justify-content: space-between
+			max-width: 720px
+		&__my-info
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			max-width: 720px
+		&__email-block
+			margin-top: 40px
+		&__my-info h1
+			width: 100% 
+		&__my-info p
+			margin-right: 10px
+		&__address h1,
+		&__time h1,
+		&__phone-block h1,
+		&__email-block h1
+			background-size: 27px
+			padding-left: 35px
+
+	.question
+		&__wrap
+			padding: 40px 50px
+		&__wrap h1
+			margin-bottom: 37px
+		&__input
+			font-size: 18px
+			padding: 21px 40px
+		&__input::placeholder
+			font-size: 18px
+		&__wrap textarea
+			font-size: 18px
+			padding: 21px 40px
+			height: 127px
+		&__wrap textarea::placeholder
+			font-size: 18px
+		&__btn
+			font-size: 18px
+			padding: 25px 20px
+		&__wrap label
+			margin-top: 18px
+
+@media (min-width: 1171px)
+	.info-contacts
+		&__email-block
+			margin-top: 0
+			margin-right: auto
+			margin-left: auto

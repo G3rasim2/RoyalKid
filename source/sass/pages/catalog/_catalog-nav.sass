@@ -1,0 +1,54 @@
+.catalog-nav
+	display: none
+
+@media (min-width: 900px)
+	.catalog-nav
+		display: block
+		&__list
+			list-style: none
+			padding: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-wrap: wrap
+		&__item
+			width: 49%
+			max-width: 390px
+			margin-right: 10px
+			margin-bottom: 20px
+			border-radius: 10px
+		&__item a
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			width: 100%
+			height: 99px
+			padding: 25px 30px
+			background: #fff
+			border-radius: 10px
+			text-decoration: none
+			font-size: 18px
+			color: #201325
+		&__item a:hover,
+		&__item a:focus
+			box-shadow: 0 0 15px rgba(#201325, .1)
+		&__item-active a
+			background: #FBF4FF
+			border: 1px solid #EADDF1
+		&__item span
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 53px
+			height: 53px
+			background: #FFEFEA
+			border-radius: 50%
+			margin-right: 13px
+			color: #442751
+			font-weight: bold
+
+@media (min-width: 1680px)
+	.catalog-nav
+		display: block
+		&__list
+			justify-content: flex-start

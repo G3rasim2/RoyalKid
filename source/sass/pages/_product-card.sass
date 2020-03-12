@@ -1,0 +1,247 @@
+.product-card
+	&__list
+		list-style: none
+		padding: 0
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+	&__list li
+		position: relative
+		display: flex
+		flex-direction: column
+		width: 49%
+		max-width: 240px
+		padding: 15px 10px
+		margin auto
+		margin-bottom: 10px
+		background: #fff
+		border-radius: 10px
+	&__product
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 100
+	&__list li > img
+		width: 100%
+		margin: auto
+		max-width: 300px
+		max-height: 300px
+		transition: .2s
+	&__title
+		font-size: 10px
+		color: #201325
+		font-weight: 600
+	&__block-price
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__price
+		display: flex
+		flex-direction: column-reverse
+		align-items: flex-start
+		font-size: 14px
+		font-weight: bold
+		color: #442751
+		margin: 0
+	&__discounts-price
+		font-size: 10px
+		color: #8E8E8E
+		font-weight: 500
+		position: relative
+	&__discounts-price::before
+		content: ''
+		position: absolute
+		top: calc(50% - 0.5px)
+		left: 0
+		width: 100%
+		height: 1px
+		background: #8E8E8E
+	&__basket
+		width: 29px
+		height: 29px
+		border-radius: 50%
+		background: #FFEBE6 url(../img/product-card/bag-purple.svg) no-repeat center
+		background-size: 13px
+	&__bottom-panel
+		display: none
+	&__sidebar
+		display: none
+	&__list .product-card__discounts:before
+		content: 'Акция %'
+		position: absolute
+		top: 0
+		right: 0
+		font-size: 10px
+		font-weight: 600
+		color: #fff
+		margin-top: 18px
+		padding: 5px 10px
+		background: #F94A4A
+		border-top-left-radius: 5px
+		border-bottom-left-radius: 5px
+		z-index: 100
+
+@media (min-width: 729px)
+	.product-card
+		&__list li
+			width: 24%
+			margin-right: 1%
+
+@media (min-width: 900px)
+	.product-card
+		&__block-price
+			margin-top: 10px
+
+@media (min-width: 1100px)
+	.product-card
+		&__list li
+			position: relative
+			width: 24%
+			margin: 0
+			margin-left: 1.33%
+			max-width: 390px
+			padding: 20px 30px
+			margin-bottom: 20px
+		&__list li:nth-child(4n+1)
+			margin-left: 0
+		&__list li:hover
+			box-shadow: 0 0 15px rgba(#000, .1)
+		&__title
+			font-size: 18px
+			margin: 5px 0
+		&__price
+			font-size: 24px
+		&__discounts-price
+			font-size: 18px
+		&__basket
+			width: 53px
+			height: 53px
+			background-size: auto
+			z-index: 100
+			transition: .2s
+		&__basket:hover
+			transform: scale(1.1)
+		&__list li:hover .product-card__bottom-panel
+			position: absolute
+			top: calc(100% - 10px)
+			left: 0
+			display: flex
+			width: 100%
+			height: 210px
+			flex-direction: column
+			background: #fff
+			border-bottom-right-radius: 10px
+			box-shadow: 0 5px 15px rgba(#000000, .1)
+			z-index: 190
+		&__list li:hover > img
+			transform: scale(1.04)
+		&__list li:nth-child(4n+1) .product-card__bottom-panel
+			border-bottom-right-radius: none
+			border-bottom-left-radius: 10px
+		&__available
+			border-top: 1px solid #E1DAE5
+			border-bottom: 1px solid #E1DAE5
+			padding: 10px 0
+			padding-left: 30px
+		&__available h3
+			display: flex
+			align-items: center
+			font-size: 14px
+			color: #413D43
+			margin: 0
+		&__available span
+			width: 16px
+			height: 16px
+			margin-right: 10px
+			background: url(../img/product-card/available.svg)
+		&__available p
+			font-size: 12px
+			color: #8E8E8E
+			margin: 0
+			margin-top: 3px
+		&__characteristic
+			display: flex
+			flex-direction: column
+			justify-content: center
+			padding: 10px 30px
+		&__characteristic p
+			font-size: 12px
+			margin-top: 0
+			margin-bottom: 10px
+		&__list li:hover .product-card__sidebar
+			position: absolute
+			top: 0
+			right: calc(100% - 10px)
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			align-items: center
+			min-height: calc(100% + 200px)
+			padding: 0 10px
+			background: #fff
+			border-right: 1px solid #E1DAE5
+			box-shadow: -5px 0 15px rgba(#000000, .1)
+			border-top-left-radius: 10px
+			border-bottom-left-radius: 10px
+			z-index: 191
+		&__list li:nth-child(4n+1) .product-card__sidebar
+			left: calc(100% - 10px)
+			border-radius: 0
+			border-top-right-radius: 10px
+			border-bottom-right-radius: 10px
+			border-right: none
+			border-left: 1px solid #E1DAE5
+			box-shadow: 5px 0 15px rgba(#000000, .1)
+		&__sidebar div
+			position: relative
+			width: 72px
+			height: 72px
+			border-radius: 10px
+			margin-top: 10px
+			border: 2px solid #FBF4FF
+			overflow: hidden
+			cursor: pointer
+		&__sidebar div img
+			width: 70px
+			height: 70px
+			border-radius: 10px
+		&__sidebar .product-card__active
+			border-color: #EADDF1
+		&__active::before
+			content: ''
+			position: absolute
+			top: 0px
+			left: 0px
+			width: 100px
+			height: 100px
+			background: rgba(#F900F0, .1)
+		&__list .product-card__discounts:before
+			font-size: 16px
+			padding-right: 15px
+
+@media (min-width: 1400px)
+	.product-card
+		&__price
+			display: flex
+			flex-direction: row
+			align-items: center
+		&__discounts-price
+			margin-left: 10px
+			font-size: 18px
+
+@media (min-width: 1500px)
+	.product-card
+		&__list li:nth-child(4n+1) .product-card__bottom-panel
+			border-bottom-right-radius: 10px
+			border-bottom-left-radius: none
+		&__list li:nth-child(4n+1) .product-card__sidebar
+			left: auto
+			right: calc(100% - 10px)
+			border-radius: 0
+			border-top-left-radius: 10px
+			border-bottom-left-radius: 10px
+			border-right: 1px solid #E1DAE5
+			border-left: none
+			box-shadow: -5px 0 15px rgba(#000000, .1)

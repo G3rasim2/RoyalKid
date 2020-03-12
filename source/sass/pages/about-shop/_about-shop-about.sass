@@ -1,0 +1,62 @@
+.about-shop-about
+	margin-bottom: 30px
+	&__wrap
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__wrap img
+		display: none
+		width: 50%
+		height: 50%
+	&__block-we
+		margin-top: 20px
+	&__block-we ul
+		list-style: none
+		padding: 0
+	&__block-we h1
+		font-size: 20px
+		margin-bottom: 22px
+	&__block-we li
+		margin-top: 15px
+	&__block-we li p
+		font-size: 16px
+		margin: 0
+	&__block-we li p:first-child
+		font-size: 30px
+		font-weight: bold
+		color: #442751
+	&__block-we li span
+		font-size: 18px
+
+@media (min-width: 900px)
+	.about-shop-about
+		margin-bottom: 90px
+		&__wrap
+			flex-direction: row
+		&__wrapper
+			width: 47%
+		&__wrap img
+			display: block
+			margin-top: 15px
+		&__block-we ul
+			margin-top: 40px
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: flex-start
+		&__block-we h1
+			display: none
+		&__block-we li
+			width: 230px
+			margin-left: 20px
+		&__block-we li:nth-child(2)
+			max-width: 200px
+		&__block-we li:first-child
+			margin-left: 0
+		&__block-we li p
+			font-size: 18px
+			margin: 0
+		&__block-we li p:first-child
+			font-size: 55px
+		&__block-we li span
+			font-size: 24px

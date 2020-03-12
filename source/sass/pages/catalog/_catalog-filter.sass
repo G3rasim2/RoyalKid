@@ -1,0 +1,372 @@
+.catalog-filter
+	& h1
+		margin-bottom: 20px
+	&__sidebar
+		margin-top: 10px
+	&__sidebar h2
+		font-size: 16px
+		padding: 20px
+		margin: 0
+		color: #201325
+		position: relative
+		width: 100%
+	&__wrap .product-card__list
+		justify-content: center
+	&__global-filter h2
+		padding: 0
+		padding-bottom: 20px
+	&__global-filter div
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__global-filter select
+		background: transparent url(../img/arrow-down-select.svg) no-repeat calc(100% - 15px) center
+		background-size: 12px
+		appearance: none
+		border: 1px solid #E1DAE5
+		border-radius: 50px
+		width: 178px
+		height: 36px
+		padding: 0px 20px
+		font-size: 12px
+		color: #442751
+	&__global-filter select:focus
+		background: transparent url(../img/arrow-up.svg) no-repeat calc(100% - 15px) center
+		background-size: 12px
+	&__global-filter button
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		border: none
+		background: #442751 url(../img/catalog/icon1.svg) no-repeat center
+	&__mobil-seting-filter
+		display: none
+	&__mobil-seting-filter--active
+		position: absolute
+		top: 0
+		left: 0
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		height: 1462px
+		padding: 60px 15px 200px 15px
+		background: #FBFDFF
+		z-index: 200
+	&__btn-close
+		position: absolute
+		top: 15px
+		left: 15px
+		width: 36px
+		height: 36px
+		background: transparent
+		border: none
+	&__btn-close::before,
+	&__btn-close::after
+		content: ''
+		position: absolute
+		top: calc(50% - 0.5px)
+		left: calc(50% - 10px)
+		width: 20px
+		height: 1px
+		background: #442751
+	&__btn-close::before
+		transform: rotate(45deg)
+	&__btn-close::after
+		transform: rotate(-45deg)
+	&__mobil-seting-filter > div
+		display: flex
+		flex-direction: column
+		width: 290px
+		background: #fff
+		margin-bottom: 25px
+		border-radius: 10px
+	&__price-filter p
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: 14px
+		color: #8E8E8E
+	&__brand-filter
+		display: flex
+	&__price-filter > div
+		display: none
+		flex-direction: column
+		margin: 30px 20px
+		margin-top: 0
+	&__brand-filter div
+		display: none
+		flex-direction: column
+		margin: 30px 20px
+		margin-top: 0
+	&__brand-filter div span
+		display: flex
+		align-items: center
+		background: transparent
+		border: 1px solid #E1DAE5
+		border-radius: 50px
+		width: 100%
+		height: 44px
+		padding: 10px 30px
+		margin-bottom: 10px
+		color: #442751
+		font-size: 14px
+		position: relative
+	&__brand-filter div span:hover,
+	&__brand-filter div span:focus
+		background: #FFEBE6
+		border-color: transparent
+	&__brand-filter div input:checked + span
+		background: #FFEBE6
+		border-color: #CFB7B1
+	&__brand-filter div input:checked + span::before,
+	&__brand-filter div input:checked + span::after
+		content: ''
+		position: absolute
+		top: calc(50% - 0.5px)
+		right: 20px
+		width: 16px 
+		height: 1px
+		background: #CFB7B1
+	&__brand-filter div input:checked + span::before
+		transform: rotate(45deg)
+	&__brand-filter div input:checked + span::after
+		transform: rotate(-45deg)
+	&__apply-filter
+		position: fixed
+		z-index: 40
+		top: 70vh
+	&__apply-filter button
+		height: 54px
+		border: none
+		border-radius: 50px
+		margin: 0 20px
+		font-size: 16px
+		cursor: pointer
+	&__apply-filter button:first-child
+		margin-top: 30px
+		margin-bottom: 10px
+		color: #442751
+		border: 1px solid #442751
+		background: transparent
+	&__apply-filter button:last-child
+		margin-bottom: 30px
+		color: #fff
+		background: #442751
+	&__apply-filter button:hover,
+	&__apply-filter button:focus
+		font-weight: 500
+
+.catalog-filter__sidebar label[for="global-filter"],
+.catalog-filter__sidebar label[for="price-filter"],
+.catalog-filter__sidebar label[for="brand-filter"]
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: url(../img/arrow-up-filter.svg) no-repeat 90%
+	cursor: pointer
+
+#global-filter:checked ~ h2 label,
+#price-filter:checked ~ h2 label,
+#brand-filter:checked ~ h2 label
+	background: url(../img/arrow-up-filter.svg) no-repeat 10%
+	transform: rotate(180deg)
+
+#global-filter:checked ~ #block-global-filter,
+#price-filter:checked ~ #block-price-filter,
+#brand-filter:checked ~ #block-brand-filter
+	display: flex
+
+.catalog-filter__sidebar label[for="global-filter"]
+	display: none
+
+
+////////////////   Фильтр рендж   //////////////////
+#block-price-filter div
+	display: flex
+	justify-content: space-between
+	align-items: center
+#block-price-filter div input
+	margin-right: 5px
+#slider-range .ui-slider-handle
+    background: #442751
+    width: 20px
+    height: 20px
+    margin: 0
+    top: calc(50% - 10px)
+    border: 0
+    border-radius: 50%
+
+#slider-range
+    border: none
+    background: #FBF4FF
+    width: 230px
+    margin-top: 10px
+
+
+.ui-slider-horizontal
+    height: 5px
+    border-radius: 0
+    border: none
+    background: #FBF4FF
+    margin-bottom: 15px
+    border: none
+
+.ui-widget-header
+    background: #442751
+
+.price-range-field
+    width: 96px
+    height: 32px
+    border: 1px solid #E1DAE5
+    border-radius: 50px
+    color: #442751
+    padding-left: 20px
+    padding-right: 10px
+    font-size: 14px
+    box-sizing: border-box
+
+@media (min-width: 728px)
+	.catalog-filter
+		&__wrap
+			display: flex
+		&__sidebar
+			width: 390px
+			margin-top: 0
+			margin-right: 10px
+		&__wrap .product-card__list
+			margin-top: 0
+		&__wrap .product-card__list li
+			width: 49%
+			margin-left: 0
+			margin-right: 2%
+		&__wrap .product-card__list li:nth-child(2n+2)
+			margin-right: 0
+		&__wrap .product-card__list li .product-card__sidebar
+			left: auto
+			right: calc(100% - 10px)
+			border-radius: 0
+			border-top-left-radius: 10px
+			border-bottom-left-radius: 10px
+			border-right: 1px solid #E1DAE5
+			border-left: none
+		&__global-filter
+			margin-bottom: 25px
+		&__global-filter h2
+			padding: 20px
+		&__global-filter div
+			display: none
+		&__global-filter select
+			width: 100%
+			margin: 30px 20px
+			margin-top: 0
+		&__mobil-seting-filter
+			display: flex
+			flex-direction: column
+		&__mobil-seting-filter--active
+			position: static
+			padding: 10px 15px 30px 15px
+			background: transparent
+		&__global-filter
+			background: #fff
+			padding-top: 1px
+			border-radius: 10px
+		&__open-filter,
+		&__btn-close
+			display: none
+		&__wrap .catalog-filter__apply-filter
+			margin: 0
+		&__apply-filter
+			position: static
+		&__apply-filter button:first-child
+			margin: 30px 20px
+			background: #442751
+			color: #fff
+		&__apply-filter button:last-child
+			display: none
+
+	.catalog-filter__sidebar label[for="global-filter"]
+		display: block
+
+@media (min-width: 900px)
+	.catalog-filter
+		padding-top: 10px
+		& h1
+			margin-bottom: 40px
+		&__sidebar h2
+			font-size: 22px
+			padding: 20px 30px
+		&__sidebar
+			margin-right: 20px
+		&__global-filter
+			background: #fff
+			border-radius: 10px
+		&__global-filter select
+			background: transparent url(../img/arrow-down.svg) no-repeat calc(100% - 30px) center
+			background-size: 12px
+			width: 327px
+			height: 51px
+			padding: 0px 30px
+			font-size: 16px
+			margin: 40px 30px
+			margin-top: 0
+		&__global-filter select:focus
+			background: transparent url(../img/arrow-up.svg) no-repeat calc(100% - 30px) center
+			background-size: 12px
+		&__mobil-seting-filter > div
+			width: 390px
+		&__mobil-seting-filter > div:last-child
+			margin-bottom: 0
+		&__price-filter > div
+			margin: 40px 30px
+			margin-top: 0
+		&__price-filter p
+			justify-content: flex-start
+			font-size: 16px
+		&__price-filter p span
+			width: 106px
+			height: 38px
+			padding: 7px 13px
+			margin: auto
+			margin-left: 10px
+		&__price-filter p span:last-child
+			margin-right: 0
+		&__brand-filter div
+			margin: 40px 30px
+			margin-top: 0
+		&__brand-filter div span
+			width: 247px
+			height: 44px
+			font-size: 16px
+		&__apply-filter button
+			height: 70px
+		&__apply-filter button:first-child
+			margin: 35px 32px
+
+	#block-price-filter div input
+		margin-right: 35px
+	#slider-range .ui-slider-handle
+	    width: 24px
+	    height: 24px
+	    margin: 0
+	    top: calc(50% - 12px)
+
+	#slider-range
+	    width: 305px
+
+	.price-range-field
+	    width: 106px
+	    height: 38px
+	    font-size: 16px
+
+
+@media (min-width: 1300px)
+	.catalog-filter
+		&__wrap .product-card__list li
+			width: 32%
+			margin-left: 2%
+			margin-right: 0
+		&__wrap .product-card__list li:nth-child(3n+1)
+			margin-left: 0

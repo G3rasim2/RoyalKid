@@ -1,0 +1,121 @@
+.news
+	padding: 20px 0
+	padding-bottom: 40px
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__wrap h1
+		text-align: center
+	&__news
+		list-style: none
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		padding: 0
+		margin-top: 20px
+	&__news li
+		margin-bottom: 10px
+		background: #fff
+		padding-right: 5px
+		border-radius: 10px
+		display: none
+		width: 100%
+		max-width: 290px
+	&__news li:nth-child(-n+4)
+		display: block
+	&__news li a
+		display: block
+		max-width: 290px
+		height: 100%
+		text-decoration: none
+		font-size: 14px
+		padding: 30px 20px
+		padding-right: 30px
+		border-radius: 10px
+	&__news li a:hover,
+	&__news li a:focus
+		box-shadow: 0 0 15px rgba(#000, .1)
+	&__news li a:active
+		box-shadow: 0 0 10px rgba(#000, .1)
+	&__news li a p
+		margin-top: 0
+		color: #8E8E8E
+		font-size: 12px
+		margin-bottom: 9px
+	&__news li h3
+		margin-top: 9px
+		font-size: 14px
+		margin-bottom: 0
+	&__details p
+		font-size: 14px
+		color: #413D43
+		margin-top: 0
+	&__btn
+		display: block
+		text-align: center
+		text-decoration: none
+		font-size: 16px
+		color: #442751
+		padding: 20px 10px
+		padding-top: 17px
+		margin: auto
+		width: 250px
+		height: 56px
+		border: 1px solid #442751
+		border-radius: 50px
+		background: transparent
+	&__btn:hover,
+	&__btn:focus
+		font-weight: 500
+		background: #442751
+		color: #fff
+		box-shadow: 0 0 15px rgba(#000, .1)
+	&__btn:focus
+		font-weight: 400
+		background: #513261
+		colro: #fff
+		box-shadow: none
+
+.news-all__news li
+	display: block
+		
+@media (min-width: 900px)
+	.news
+		padding: 70px 0
+		padding-bottom: 100px
+		&__wrap
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+		&__news
+			order: 2
+			justify-content: flex-start
+		&__news li
+			width: 32%
+			max-width: 527px
+			margin-top: 20px
+			margin-left: 2%
+		&__news li:nth-child(-n+6)
+			display: block
+		&__news li:nth-child(3n+1)
+			margin-left: 0
+		&__news li a
+			max-width: 527px
+			padding: 50px 30px
+			padding-top: 30px
+		&__news li a p
+			font-size: 16px
+		&__news li h3
+			font-size: 18px
+		&__details
+			display: flex
+			align-items: center
+			order: 1
+		&__details p
+			margin: 0
+			margin-right: 30px
+		&__btn
+			width: 220px
+			height: 62px
+			padding-top: 20px

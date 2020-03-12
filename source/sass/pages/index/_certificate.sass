@@ -1,0 +1,94 @@
+.certificate
+	padding-top: 40px
+	padding-bottom: 20px
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+		text-align: center
+	&__wrap #certificate-carousel
+		margin-top: 20px
+	&__wrap p
+		font-size: 14px
+		max-width: 683px
+	&__text
+		margin-bottom: 30px
+	&__btn
+		display: flex
+		align-items: center
+		justify-content: center
+		text-decoration: none
+		font-size: 16px
+		text-align: center
+		width: 250px
+		height: 56px
+		margin: auto
+		color: #442751
+		border: 1px solid #442751
+		border-radius: 50px
+		background: transparent
+	&__btn:hover,
+	&__btn:focus
+		font-weight: 500
+		background: #442751
+		color: #fff
+		box-shadow: 0 0 15px rgba(#000, .1)
+	&__btn:focus
+		font-weight: 400
+		background: #513261
+		colro: #fff
+		box-shadow: none
+
+#certificate-carousel img
+	width: 199px
+	margin: auto
+	border-radius: 10px
+
+#certificate-carousel .owl-dots .owl-dot span
+	background: #C4C4C4
+
+#certificate-carousel .owl-dots .active span
+	background: #442751
+
+@media (min-width: 900px)
+	.certificate
+		padding-top: 120px
+		padding-bottom: 70px
+		&__wrap
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			align-items: flex-start
+			justify-content: space-between
+			text-align: left
+		&__wrap h1
+			margin-bottom: 25px
+		&__wrap #certificate-carousel
+			order: 2
+			margin-top: 60px
+		&__details
+			order: 1
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+		&__wrap p
+			font-size: 18px
+			margin: 0
+		&__details p
+			margin-bottom: 30px
+		&__btn
+			font-size: 18px
+			width: 253px
+			height: 62px
+			margin-left: 0
+
+
+	#certificate-carousel img
+		width: 390px
+
+@media (min-width: 1148px)
+	.certificate
+		&__btn
+			margin-left: auto
+			margin-right: 0

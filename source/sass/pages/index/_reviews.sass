@@ -1,0 +1,57 @@
+.reviews
+	padding: 20px 0
+	&__wrap
+		text-align: center
+	&__wrap p
+		font-size: 14px
+		max-width: 709px
+		margin: 10px auto
+	&__wrap #reviews-carousel
+		margin-top: 30px
+		padding-bottom: 17px
+
+#reviews-carousel img
+	width: 270px
+	margin: auto
+
+#reviews-carousel .owl-dots
+	margin-top: 30px
+
+#reviews-carousel .owl-dots .owl-dot span
+	background: #C4C4C4
+
+#reviews-carousel .owl-dots .active span
+	background: #442751
+
+#reviews-carousel .owl-nav button.owl-prev,
+#reviews-carousel .owl-nav button.owl-next
+	position: absolute
+	bottom: 0
+	width: 50px
+	height: 50px
+	border: 1px solid #331F3C
+	border-radius: 50%
+#reviews-carousel .owl-nav button
+	background: url(../img/arrow-left.svg) no-repeat center
+#reviews-carousel .owl-nav button.owl-prev
+	left: calc(50% - 140px)
+#reviews-carousel .owl-nav button.owl-next
+	right: calc(50% - 140px)
+	transform: rotate(180deg)
+#reviews-carousel .owl-nav button:hover,
+	background: #331F3C url(../img/arrow.svg) no-repeat center
+
+@media (min-width: 900px)
+	.reviews
+		padding: 70px 0
+		&__wrap p
+			margin-top: 20px
+			margin-bottom: 50px
+			font-size: 18px
+
+	#reviews-carousel .owl-dots
+		margin-top: 60px
+	#reviews-carousel .owl-nav button.owl-prev
+		left: calc(50% - 100px)
+	#reviews-carousel .owl-nav button.owl-next
+		right: calc(50% - 100px)

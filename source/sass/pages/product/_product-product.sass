@@ -1,0 +1,362 @@
+.product-product
+	padding: 10px 0
+	& h1
+		margin-bottom: 20px
+	&__view-product
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+		background: #fff
+		border-radius: 10px
+		margin-bottom: 30px
+		padding-top: 20px
+		overflow: hidden
+		position: relative
+		max-width: 937px
+	&__view-product span img
+		display: block
+		width: 100%
+		max-width: 600px
+		transition: 0.1s
+		margin: 0 auto
+	&__view-product .zoom
+		margin: auto
+		border-radius: 10px
+	&__view-product-icon::before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		width: 37px
+		height: 37px
+		margin: 20px 20px 0 0
+		background: #FFEFEA url(../img/catalog/arrow-all.svg) no-repeat center
+		background-size: 15px
+		border-radius: 50%
+	&__additionally-wrapper
+		padding: 22px 20px
+		background: #fff
+		border-radius: 10px
+	&__block-1 h2
+		font-size: 16px
+		font-weight: 400
+	&__block-1 h2 b
+		font-size: 20px
+		font-weight: bold
+	&__block-1 div
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		width: 254px
+	&__block-1 label
+		width: 54px
+		height: 54px
+		border: 2px solid #FBF4FF
+		margin-bottom: 10px
+		margin-right: 10px
+		border-radius: 5px
+		cursor: pointer
+		position: relative
+	&__block-1 label:nth-child(4n)
+		margin-right: 0
+	&__block-1 img
+		width: 100%
+		height: 100%
+		border-radius: 5px
+		margin: auto
+	&__block-1 p
+		font-size: 16px
+	&__block-1 b
+		font-weight: 600
+		margin-right: 5px
+	&__block-1 p span
+		color: #442751
+		font-weight: 600
+	&__block-2
+		margin: 25px 0
+	&__block-2 h2
+		font-size: 24px
+		margin: 0
+		margin-bottom: 10px
+		color: #442751
+	&__block-2 span
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 217px
+		height: 50px
+		border-radius: 5px
+		font-size: 14px
+		font-weight: 600
+		background: #FFEFEA
+	&__block-2 span img
+		width: 22px
+		height: 22px
+		margin-right: 10px
+	&__block-2 p
+		margin-top: 10px
+		font-size: 12px
+		color: #8E8E8E
+		font-style: italic
+	&__block-3 button,
+	&__block-3 a
+		text-decoration: none
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 229px
+		height: 50px
+		font-size: 14px
+		border-radius: 50px
+		background: transparent
+		border: none
+		margin-top: 10px
+		cursor: pointer
+	&__block-3 button:hover,
+	&__block-3 button:focus,
+	&__block-3 a:hover,
+	&__block-3 a:focus
+		font-weight: 600
+	&__block-3 button
+		color: #fff
+		background: #442751
+	&__block-3 a
+		color: #442751
+		border: 1px solid #442751
+	&__block-4
+		display: none
+	&__video-product
+		background: #FFEFEA
+		display: flex
+		align-items: center
+		width: 290px
+		height: 80px
+		padding: 10px
+		text-decoration: none
+		margin-top: 20px
+		border-radius: 10px
+		cursor: pointer
+	&__video-product p
+		margin: 0
+		font-size: 16px
+		font-weight: 600
+	&__video-product img
+		width: 73px
+		height: 67px
+
+#productColorBlue:checked ~ label[for="productColorBlue"]::before,
+#productColorBlack:checked ~ label[for="productColorBlack"]::before,
+#productColorRed:checked ~ label[for="productColorRed"]::before,
+#productColorWhite:checked ~ label[for="productColorWhite"]::before
+		content: ''
+		position: absolute
+		top: -2px
+		left: -2px
+		width: 54px
+		height: 54px
+		background: rgba(#F900FF, .1)
+		border-radius: 5px
+
+#product-carousel
+	position: relative
+	width: 71%
+	padding: 30px 0
+	margin: auto
+#product-carousel img
+	max-width: 162px
+	border-radius: 10px
+	cursor: pointer
+#product-carousel .owl-nav button.owl-prev,
+#product-carousel .owl-nav button.owl-next
+	position: absolute
+	top: calc(50% - 20px)
+	width: 39px
+	height: 39px
+	border: 1px solid #331F3C
+	border-radius: 50%
+	margin: 0
+#product-carousel .owl-nav button
+	background: url(../img/arrow-left.svg) no-repeat center
+#product-carousel .owl-nav button.owl-prev
+	left: -40px
+#product-carousel .owl-nav button.owl-next
+	right: -40px
+	transform: rotate(180deg)
+#product-carousel .owl-nav button:hover,
+#product-carousel .owl-nav button:focus
+	background: #331F3C url(../img/arrow.svg) no-repeat center
+
+@media (min-width: 900px)
+	.product-product
+		padding: 40px 0
+		padding-top: 20px
+		& h1
+			margin-bottom: 40px
+		&__view-product
+			margin: auto
+			margin-top: 0
+			margin-bottom: 30px
+			padding-top: 0px
+		&__view-product span
+			width: 100%
+		&__view-product span::before icon
+			width: 50px
+			height: 50px
+			margin: 30px 40px 0 0
+			background-size: auto
+		&__additionally-wrapper
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			max-width: 623px
+			min-width: 568px
+			padding: 40px
+			padding-bottom: 50px
+			margin: auto
+		&__block-1
+			width: 100%
+			margin-bottom: 43px
+		&__block-1 h2
+			font-size: 18px
+		&__block-1 h2 b
+			font-size: 22px
+		&__block-1 div
+			width: 485px
+			margin-top: 30px
+		&__block-1 label
+			width: 103px
+			height: 103px
+			border-radius: 10px
+			margin-right: 20px
+			margin-bottom: 20px
+		&__block-1 label:nth-child(4n)
+			margin-right: 0
+		&__block-1 img
+			height: 100%
+			border-radius: 10px
+		&__block-1 p
+			margin: 0
+			margin-top: 10px
+			font-size: 18px
+		&__block-1 p:last-child
+			margin-top: 25px
+		&__block-2
+			margin: 0
+			margin-right: 20px
+		&__block-2 h2
+			font-size: 30px
+			margin-bottom: 30px
+		&__block-2 span
+			width: 254px
+			font-size: 16px
+		&__block-2 span img
+			width: 22px
+			height: 22px
+		&__block-2 p
+			margin-top: 10px
+			font-size: 16px
+		&__block-3
+			display: flex
+			flex-direction: column
+		&__block-3 button,
+		&__block-3 a
+			font-size: 16px
+			border-radius: 50px
+			margin-top: 0
+			margin-bottom: 20px
+		&__block-4
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 100%
+			margin-top: 40px
+		&__block-4 a
+			text-decoration: none
+			font-size: 16px
+			color: #786780
+			border: 1px solid #786780
+			border-radius: 50px
+			padding: 14px 24px
+			cursor: pointer
+		&__block-4 a:first-child
+			padding: 14px 39px
+		&__block-4 a:hover,
+		&__block-4 a:focus
+			font-weight: 600
+		&__video-product
+			width: 623px
+			height: 149px
+			padding: 30px
+			margin: auto
+			margin-top: 17px
+			position: relative
+			overflow: hidden
+		&__video-product span
+			position: absolute
+			top: 27px
+			left: calc(100% - 142px)
+			border: 26px solid #FFE9E3
+			border-radius: 50%
+			width: 162px
+			height: 162px
+		&__video-product span::before,
+		&__video-product span::after
+			content: ''
+			position: absolute
+			top: -70px
+			left: -10px
+			border: 9px solid #FFE9E3
+			border-radius: 50%
+			width: 36px
+			height: 36px
+		&__video-product span::after
+			top: -30px
+			left: -70px
+			width: 43px
+			height: 43px
+		&__video-product p
+			margin: 0
+			font-size: 16px
+			font-weight: 600
+		&__video-product img
+			width: auto
+			height: auto
+
+	#productColorBlue:checked ~ label[for="productColorBlue"]::before,
+	#productColorBlack:checked ~ label[for="productColorBlack"]::before,
+	#productColorRed:checked ~ label[for="productColorRed"]::before,
+	#productColorWhite:checked ~ label[for="productColorWhite"]::before
+			border-radius: 10px
+			width: 103px
+			height: 103px
+
+	#product-carousel .owl-nav button.owl-prev,
+	#product-carousel .owl-nav button.owl-next
+		width: 50px
+		height: 50px
+	#product-carousel .owl-nav button.owl-prev
+		left: -10%
+	#product-carousel .owl-nav button.owl-next
+		right: -10%
+
+@media (min-width: 1200px)
+	.product-product
+		&__wrap
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+		&__view-product
+			margin-bottom: 0
+			margin-left: 0
+			margin-right: 4%
+	#product-carousel
+		display: block
+	#product-carousel .owl-nav button.owl-prev,
+	#product-carousel .owl-nav button.owl-next
+		width: 50px
+		height: 50px
+	#product-carousel .owl-nav button.owl-prev
+		left: -10%
+	#product-carousel .owl-nav button.owl-next
+		right: -10%

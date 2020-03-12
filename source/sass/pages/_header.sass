@@ -1,0 +1,355 @@
+.header
+	margin-top: 50px
+	&__wrap
+		margin-top: 15px
+	&__wrap-1
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__wrap img
+		height: 40px
+	&__form-search
+		display: none
+		justify-content: center
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: #FBFDFF
+		z-index: 100
+	&__form-search span
+		position: absolute
+		top: 17px
+		left: 5%
+		width: 30px
+		height: 30px
+		background: transparent
+		border: none
+	&__form-search span:before,
+	&__form-search span:after
+		content: ''
+		position: absolute
+		top: 10px
+		width: 28px
+		height: 2px
+		background: #000
+	&__form-search span:before
+		left: 0
+		transform: rotate(45deg)
+	&__form-search span:after
+		left: 0
+		transform: rotate(-45deg)
+	&__form-search input
+		margin-top: 65px
+		border-top-left-radius: 5px
+		border-bottom-left-radius: 5px
+		border-top-right-radius: 0
+		border-bottom-right-radius: 0
+	&__form-search input[type='search']
+		width: 70%
+		height: 53px
+		border: 1px solid #E1DAE5
+		font-size: 14px
+		color: #8E8E8E
+		padding-left: 20px
+		padding-right: 10px
+	&__form-search input[type='search']:hover,
+	&__form-search input[type='search']:focus
+		border: 1px solid #C5B1D0
+	&__form-search input[type='submit']
+		width: 20%
+		height: 53px
+		font-size: 0
+		border: none
+		background: #442751 url(../img/arrow.svg) no-repeat center
+		transform: rotate(180deg)
+	&__form-search-active
+		display: flex
+	&__basket
+		font-size: 0
+	&__basket div
+		display: block
+		width: 36px
+		height: 36px
+		background: #442751 url(../img/bag-white.svg) no-repeat center
+		background-size: 13px
+		border-radius: 50%
+		position: relative
+	&__basket:hover,
+	&__basket:focus
+		font-weight: 600
+		color: #442751
+	&__basket:hover p,
+	&__basket:focus p
+		font-weight: 400
+	&__basket:active
+		font-weight: 500
+	&__basket:active div
+		background-color: #513261
+	&__basket div p
+		color: #442751
+		font-size: 12px
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		top: -7px
+		right: 0
+		margin: 0
+		width: 17px
+		height: 17px
+		background: #fff
+		border-radius: 50%
+	&__wrap-2
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 15px
+	&__btn
+		background: transparent
+		border: 1px solid #442751
+		border-radius: 5px
+		padding: 12px 0
+		font-size: 14px
+		padding-left: 33px
+		padding-right: 17px
+		cursor: pointer
+	&__btn--catalog
+		background: #442751 url(../img/burger.svg) no-repeat 10px center
+		color: #fff
+	&__btn--search
+		background: url(../img/search-mobile.svg) no-repeat 12px 12px
+	&__menu
+		display: none
+		flex-direction: column
+		background: #442751
+		margin-top: 10px
+		padding: 0 15px
+		list-style: none
+		border-radius: 5px
+	&__menu li
+		border-top: 1px solid rgba(#fff, .2)
+		display: flex
+		flex-direction: column
+		position: relative
+	&__menu + li:first-child
+		border: none
+	&__menu a
+		color: #fff
+		font-size: 14px
+		font-weight: 500
+		text-decoration: none
+		padding: 15px 10px
+	&__menu-link::before
+		content: ''
+		position: absolute
+		top: 15px
+		left: 0
+		width: 20px
+		height: 20px
+		background: url(../img/arrow.svg) no-repeat center
+	&__menu-active
+		display: flex
+	&__submenu
+		display: none
+		flex-direction: column
+		list-style: none
+		padding: 0
+		z-index: 600
+	&__menu-link > .link--header
+		margin-left: 10px
+	&__menu-link > .header__submenu
+		display: flex
+	&__submenu--noactive a
+		color: rgba(#fff, .4)
+	&__submenu a
+		font-size: 13px
+		font-weight: 400
+		padding: 10px 20px
+		padding-right: 0
+		padding-bottom: 12px
+		margin: 4px 0
+		display: flex
+		align-items: center
+	&__submenu a span
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 27px
+		height: 27px
+		margin-right: 10px
+		background: #FFEFEA
+		border-radius: 50%
+		color: #442751
+		font-size: 6px
+		font-weight: bold
+	&__submenu a span img
+		height: 16px
+
+@media (min-width: 900px)
+	.header
+		margin-top: 0
+		position: relative
+		&__wrap img
+			height: 58px
+		&__form-search
+			display: flex
+			flex-direction: row-reverse
+			position: relative
+			justify-content: flex-end
+			width: 53%
+			height: auto
+			background: transparent
+			margin-left: 5%
+			margin-right: auto
+		&__form-search span
+			display: none
+		&__form-search input
+		&__form-search input
+			border-top-right-radius: 0
+			border-bottom-right-radius: 0
+			border-top-left-radius: 0
+			border-bottom-left-radius: 0
+			margin-top: 0
+			cursor: pointer
+		&__form-search input[type='search']
+			width: 242px
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+			transition: .3s
+		&__form-search input[type='search']:focus
+			width: 70%
+		&__form-search input[type='submit']
+			width: 113px
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
+			font-size: 14px
+			color: #fff
+			padding-left: 25px
+			border: none
+			background: #442751 url(../img/search.svg) no-repeat 20px center
+			transform: rotate(0deg)
+		&__basket
+			color: #201325
+			font-size: 14px
+			text-decoration: none
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 130px
+		&__basket div
+			width: 53px
+			height: 53px
+			background-size: auto
+			margin-right: 10px
+		&__basket div p
+			font-size: 16px
+			top: -12px
+			width: 25px
+			height: 25px
+		&__wrap-2
+			display: none
+		&__menu
+			display: flex
+			flex-direction: row
+			background: #fff
+			margin-top: 40px
+			margin-bottom: 0
+			padding: 0
+		&__menu > li > a:hover,
+		&__menu > li > a:focus
+			background: #FFEFEA
+		&__menu > li
+			border-top: none
+			width: 20%
+			text-align: center
+		&__menu a
+			color: #201325
+			font-size: 18px
+			display: flex
+			justify-content: center
+			align-items: center
+		&__menu > li > a
+			height: 100%
+			border-left: 1px solid #E1DAE5
+		&__menu > li:first-child > a
+			border: none
+		&__menu-link::before
+			display: none
+		&__menu	.header__menu-link > a
+			padding-left: 10px
+			margin-left: 0
+			background: #FFEFEA
+		&__submenu
+			position: absolute
+			top: 100%
+			left: 0
+			background: #FBFDFF
+			box-shadow: 0 7px 10px -13px #000
+			border-bottom-left-radius: 20px
+			border-bottom-right-radius: 20px
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			flex-wrap: wrap
+			padding: 30px 0
+			padding-left: 50px
+			width: 500%
+			z-index: 600
+		&__submenu-2
+			margin-left: -100%
+		&__submenu-3
+			margin-left: -200%
+		&__submenu-4
+			margin-left: -300%
+		&__submenu-5
+			margin-left: -400%
+		&__submenu li
+			width: 33%
+			padding: 20px 0px
+		&__submenu--noactive a
+			background: #fff
+			color: #D6C6C6
+			cursor: default
+		&__menu .header__submenu--noactive a:hover,
+		&__menu .header__submenu--noactive a:focus
+			background: #fff
+		&__menu .header__submenu--noactive > a
+			background: #fff
+		&__submenu a
+			padding: 0
+			font-size: 14px
+			color: #3D3232
+			text-align: left
+			justify-content: flex-start
+		&__submenu a span
+			width: 53px
+			height: 53px
+			font-size: 18px
+		&__submenu-2 a span
+			width: 67px
+			height: 67px
+			font-size: 13px
+		&__submenu a span img
+			height: auto
+		&__overlay
+			display: none
+			position: absolute
+			top: 100%
+			width: 100%
+			height: 100vw
+			background: rgba(#4D4848, .1)
+			z-index: 200
+		&__overlay--active
+			display: block
+
+@media (min-width: 1400px)
+	.header
+		&__form-search
+			margin-left: 10%
+		&__form-search input[type='search']:focus
+			width: 80%
+		&__submenu li
+			width: 18%
+			margin-right: 2%

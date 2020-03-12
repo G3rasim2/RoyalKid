@@ -1,0 +1,72 @@
+/* картинка на странице */
+.minimized
+  width: auto
+  cursor: pointer
+ 
+/* увеличенная картинка */
+#magnify
+  display: none
+ 
+  /* position: absolute; upd: 24.10.2016 */
+  position: fixed
+  max-width: 100%
+  height: auto
+  z-index: 9999
+
+#magnify img
+  width: 100%
+  border-radius: 10px
+ 
+/* затемняющий фон */
+#overlay 
+  display: none
+ 
+  background: #000
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  opacity: 0.5
+  z-index: 9990
+ 
+/* кнопка закрытия */
+#close-popup
+  width: 30px
+  height: 30px
+ 
+  background: #FFFFFF
+  border: 1px solid #AFAFAF
+  border-radius: 15px
+  cursor: pointer
+  position: absolute
+  top: 15px
+  right: 15px
+ 
+#close-popup i
+  width: 30px
+  height: 30px
+  background-size: 16px 16px
+  display: block
+ 
+#close-popup i::before,
+#close-popup i::after
+  content: ''
+  position: absolute
+  top: 12px
+  width: 22px
+  height: 2px
+  background: #000
+
+#close-popup i::before
+  left: 3px
+  transform: rotate(45deg)
+
+#close-popup i::after
+  right: 3px
+  transform: rotate(-45deg)
+ 
+#close-popup:hover 
+  animation: rota 4s infinite normal
+  -webkit-animation-iteration-count: 1
+  animation-iteration-count: 1

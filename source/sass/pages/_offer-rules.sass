@@ -1,0 +1,56 @@
+.offer-rules
+	margin-top: 30px
+	margin-bottom: 40px
+	&__wrap h1
+		margin-bottom: 15px
+	&__wrap h2
+		margin: 15px 0
+		font-size: 16px
+		font-weight: 600
+	&__wrap p
+		margin: 0
+		font-size: 14px
+		text-indent: 13px
+	&__wrap b
+		font-weight: 600
+	&__wrap ul
+		list-style: none
+		padding: 0
+		margin-top: 5px
+	&__wrap ul li
+		position: relative
+		padding-left: 13px
+	&__wrap ul li:before
+		content: ''
+		position: absolute
+		top: calc(50% - 3px)
+		left: 0
+		width: 6px
+		height: 6px
+		background: #442751
+		border-radius: 50%
+	&__wrap ul p
+		text-indent: 0
+		font-size: 13px
+	&__wrap .offer-rules__p
+		text-indent: 0
+
+@media (min-width: 400px)
+	.offer-rules
+		&__wrap br
+			display: none
+
+@media (min-width: 900px)
+	.offer-rules
+		margin-top: 40px
+		margin-bottom: 90px
+		&__wrap h1
+			margin-bottom: 25px
+		&__wrap h2
+			margin: 25px 0
+			font-size: 18px
+		&__wrap p
+			font-size: 16px
+			max-width: 1337px
+		&__wrap ul p
+			font-size: 15px

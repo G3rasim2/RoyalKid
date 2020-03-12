@@ -1,0 +1,484 @@
+.basket
+	& h1
+		margin-bottom: 20px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+	&__selected-product
+		margin-right: 20px
+		display: flex
+		flex-direction: column
+		width: 100%
+		max-width: 1115px
+	&__first-block-basket
+		display: flex
+		justify-content: space-between
+		align-items: center
+		background: #fff
+		padding: 20px 15px
+		border-bottom: 1px solid #E1DAE5
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+	&__first-block-basket label
+		display: flex
+		align-items: center
+		cursor: pointer
+	&__first-block-basket label p
+		margin: 0
+		margin-left: 10px
+		font-size: 12px
+		font-weight: 500
+		color: #442751
+	&__first-block-basket label span
+		width: 16px
+		height: 16px
+		border: 1px solid #E1DAE5
+		border-radius: 2px
+	&__first-block-basket label input:checked + span
+		border-color: #442751
+		background: url(../img/mark.svg) no-repeat center
+		background-size: 11px
+	&__first-block-basket button
+		font-size: 12px
+		padding: 0
+		color: #8E8E8E
+		background: transparent
+		border: none
+		cursor: pointer
+	&__first-block-basket button:hover,
+	&__first-block-basket button:focus
+		color: #442751
+	&__list
+		list-style: none
+		background: #fff
+		padding: 0 15px
+		margin: 0
+		margin-bottom: 20px
+	&__list li
+		padding: 15px 0
+		padding-bottom: 32px
+		border-bottom: 1px solid #E1DAE5
+		display: flex
+		align-items: flex-start
+	&__list li:last-child
+		border-bottom: none
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
+	&__list li label
+		display: flex
+		align-items: center
+		cursor: pointer
+	&__list li label img
+		height: 60px
+	&__list li label span
+		width: 16px
+		height: 16px
+		border: 1px solid #E1DAE5
+		border-radius: 2px
+	&__list li label input:checked + span
+		border-color: #442751
+		background: url(../img/mark.svg) no-repeat center
+		background-size: 11px
+	&__item-wrap
+		width: 100%
+	&__title-item h3
+		font-size: 12px
+		font-weight: 500
+		margin: 0
+		margin-bottom: 10px
+	&__title-item select,
+	&__title-item button
+		display: none
+		cursor: pointer
+	&__price-item
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		width: 125px
+		margin-bottom: 10px
+	&__price-item p
+		margin: 0
+		margin-right: 10px
+	&__total-price
+		font-size: 12px
+		font-weight: bold
+		color: #442751
+	&__first-price
+		position: relative
+		font-size: 12px
+		font-weight: 500
+		color: #8E8E8E
+	&__first-price::before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		width: 100%
+		height: 1px
+		background: #8E8E8E
+	&__sale-price
+		font-size: 10px
+		font-weight: 500
+		color: #B75656
+	&__quantity-item
+		display: flex
+		align-items: center
+	&__quantity-item select
+		appearance: none
+		background: url(../img/arrow-down.svg) no-repeat calc(100% - 10px) center
+		background-size: 8px
+		font-size: 10px
+		color: #442751
+		padding: 10px
+		border: 1px solid #E1DAE5
+		border-radius: 5px
+		cursor: pointer
+	&__quantity-item select:hover,
+	&__quantity-item select:focus
+		border-color: #442751
+	&__quantity-item select[name="basket-brand"]
+		width: 121px
+		margin-right: 5px
+	&__quantity-item select[name="basket-quantity"]
+		width: 61px
+	&__block-total
+		background: #fff
+		border-radius: 10px
+		padding: 20px 15px
+		width: 290px
+		position: relative
+		margin: auto
+		margin-bottom: 20px
+	&__block-link
+		display: flex
+		flex-direction: column
+		width: 290px
+		margin-left: -10px
+		padding: 0 15px
+		border-bottom: 1px solid #E1DAE5
+	&__block-link a
+		display: flex
+		justify-content: center
+		align-items: center
+		text-decoration: none
+		font-size: 13px
+		color: #fff
+		text-align: center
+		cursor: pointer
+		background: #442751
+		width: 260px
+		height: 50px
+		border-radius: 50px
+	&__block-link a:hover,
+	&__block-link a:focus
+		font-weight: 500
+	&__block-link p
+		font-size: 12px
+		color: #8E8E8E
+		margin-top: 10px
+		margin-bottom: 20px
+	&__block-link h2
+		font-size: 16px
+		margin: 0
+	&__block-link form
+		display: flex
+		flex-direction: column
+		margin-top: 15px
+		margin-bottom: 25px
+	&__block-link form input
+		border: 1px solid #E0DAE5
+		padding: 15px 20px
+		height: 53px
+		border-radius: 50px
+		font-size: 12px
+		color: #442751
+		margin-bottom: 10px
+	&__block-link form input:hover,
+	&__block-link form input:focus
+		border-color: #442751
+	&__block-link form input::placeholder
+		font-size: 12px
+		color: #442751
+	&__block-link form button
+		border: none
+		border-radius: 50px
+		padding: 15px
+		height: 53px
+		background: #FFEFEA
+		font-size: 12px
+		color: #442751
+	&__block-link form button:hover,
+	&__block-link form button:focus
+		font-weight: 500
+	&__block-total p
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__block-info-total
+		border-bottom: 1px solid #E1DAE5
+	&__block-info-total p:first-child
+		font-size: 16px
+		font-weight: bold
+		color: #201325
+		margin: 18px 0
+	&__block-info-total p:first-child span
+		font-size: 12px
+		font-weight: 400
+		color: #8E8E8E
+	&__block-info-total p:nth-child(2)
+		font-size: 12px
+		font-weight: 500
+		color: #201325
+	&__block-info-total p:nth-child(2) span
+		font-size: 14px
+		font-weight: bold
+		color: #442751
+	&__block-info-total p:last-child
+		font-size: 12px
+		font-weight: 500
+		color: #201325
+		margin-bottom: 20px
+	&__block-info-total p:last-child span
+		font-size: 14px
+		font-weight: bold
+		color: #B75656
+	&__block-delivery
+		border-bottom: 1px solid #E1DAE5
+	&__block-delivery p
+		font-size: 16px
+		font-weight: bold
+		color: #201325
+	&__block-delivery p span
+		font-size: 14px
+		color: #423535
+	&__block-total-total p
+		font-size: 18px
+		font-weight: bold
+		color: #442751
+	&__block-total-total-1 p
+		font-size: 16px
+		font-weight: bold
+		color: #442751
+		margin: 20px 0
+		margin-bottom: 0
+	&__block-total-total a
+		display: flex
+		justify-content: center
+		align-items: center
+		text-decoration: none
+		width: 100%
+		height: 50px
+		margin-top: 20px
+		margin-bottom: 10px
+		border: none
+		border-radius: 50px
+		background: #442751
+		font-size: 13px
+		color: #fff
+	&__block-total-total a:hover,
+	&__block-total-total a:focus
+		font-weight: 500
+	&__block-after
+		position: absolute
+		top: calc(100% + 10px)
+		text-align: center
+		padding: 0 15px
+	&__block-after p
+		display: block
+		font-size: 10px
+		margin: 0
+
+@media (min-width: 1000px)
+	.basket
+		& h1
+			margin-top: 60px
+			margin-bottom: 40px
+		&__selected-product
+			margin-bottom: 0
+		&__first-block-basket
+			padding: 30px 40px
+			justify-content: flex-start
+		&__first-block-basket label p
+			margin-left: 10px
+			font-size: 16px
+		&__first-block-basket label span
+			width: 27px
+			height: 27px
+		&__first-block-basket label input:checked + span
+			background-size: auto
+		&__first-block-basket button
+			font-size: 16px
+			margin-left: 20px
+		&__list
+			padding: 0 40px
+			padding-right: 21px
+			margin-bottom: 40px
+		&__list li
+			padding: 30px 0
+			padding-bottom: 27px
+		&__list li label img
+			height: auto
+		&__list li label span
+			width: 27px
+			height: 27px
+		&__list li label input:checked + span
+			background-size: auto
+		&__item-wrap
+			width: auto
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			width: 100%
+		&__title-item
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: flex-start
+			height: 142px
+		&__title-item h3
+			font-size: 18px
+			margin-bottom: 0
+		&__title-item select,
+		&__title-item button
+			display: block
+		&__title-item select
+			font-size: 16px
+			color: #442751
+			appearance: none
+			background: url(../img/arrow-down.svg) no-repeat calc(100% - 20px) center
+			background-size: 14px
+			padding: 10px 20px
+			height: 50px
+			border: 1px solid #E1DAE5
+			border-radius: 5px
+			width: 204px
+			margin-top: 15px
+			margin-bottom: auto
+		&__title-item select:hover,
+		&__title-item select:focus
+			border-color: #442751
+		&__title-item button
+			background: transparent
+			border: none
+			font-size: 16px
+			color: #442751
+		&__title-item button:hover,
+		&__title-item button:focus
+			color: #E1DAE5
+		&__price-item
+			flex-direction: column
+			align-items: flex-start
+			flex-wrap: nowrap
+			margin: 0 30px
+		&__price-item p
+			margin-right: 0
+			margin-bottom: 10px
+		&__total-price
+			font-size: 18px
+		&__first-price
+			font-size: 18px
+		&__sale-price
+			font-size: 18px
+			width: 160px
+		&__quantity-item select
+			background: url(../img/arrow-down.svg) no-repeat calc(100% - 20px) center
+			background-size: 14px
+			font-size: 16px
+			color: #442751
+			padding: 15px
+			border-radius: 5px
+		&__quantity-item select[name="basket-brand"]
+			display: none
+		&__quantity-item select[name="basket-quantity"]
+			width: 94px
+			margin-right: auto
+		&__block-total
+			padding: 35px 40px
+			padding-top: 23px
+			width: 487px
+			margin: 0
+			margin-left: 20px
+		&__block-link
+			width: calc(100% + 80px)
+			margin-left: -40px
+			padding: 0 40px
+		&__block-link a
+			justify-content: center
+			font-size: 16px
+			height: 63px
+			width: 401px
+		&__block-link p
+			font-size: 16px
+			margin-top: 20px
+		&__block-link h2
+			font-size: 20px
+		&__block-link form
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-start
+			margin-top: 12px
+		&__block-link form input
+			width: 253px
+			padding: 0 30px
+			margin-right: 10px
+			font-size: 14px
+			margin-bottom: 0
+		&__block-link form input::placeholder
+			font-size: 14px
+		&__block-link form button
+			width: 144px
+			padding: 0 30px
+			font-size: 14px
+		&__block-info-total,
+		&__block-delivery
+			padding: 0 17px
+			margin-left: -17px
+		&__block-info-total p:first-child
+			font-size: 20px
+			margin: 22px 0
+		&__block-info-total p:first-child span
+			font-size: 16px
+		&__block-info-total p:nth-child(2)
+			font-size: 16px
+			margin-bottom: 20px
+		&__block-info-total p:nth-child(2) span
+			font-size: 18px
+		&__block-info-total p:last-child
+			font-size: 16px
+		&__block-info-total p:last-child span
+			font-size: 18px
+		&__block-delivery p
+			font-size: 20px
+			margin: 22px 0
+		&__block-delivery p span
+			font-size: 18px
+		&__block-total-total p
+			font-size: 22px
+			margin: 35px 0
+		&__block-total-total-1 p
+			margin-bottom: 0
+		&__block-total-total a
+			height: 63px
+			font-size: 16px
+		&__block-after
+			top: calc(100% + 15px)
+			left: 0
+			padding: 0 20px
+		&__block-after p
+			font-size: 14px
+		&__block-after p br
+			display: none
+
+@media (min-width: 1300px)
+	.basket
+		&__wrap
+			flex-wrap: nowrap
+
+@media (min-width: 1357px)
+	.basket
+		&__quantity-item select[name="basket-quantity"]
+			width: 94px
+			margin-right: 60px

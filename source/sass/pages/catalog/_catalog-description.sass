@@ -1,0 +1,94 @@
+.catalog-description
+	padding-top: 20px
+	padding-bottom: 40px
+	&__wrap-text img
+		display: none
+	&__wrap h1
+		margin-top: 20px
+		margin-bottom: 6px
+		font-size: 20px
+	&__wrap p
+		margin: 0px
+		font-size: 14px
+	&__list
+		list-style: none
+		padding: 0
+	&__list li
+		margin-top: 20px
+		display: flex
+		align-items: flex-start
+		justify-content: flex-start
+	&__list span
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #FFEFEA
+		width: 37px
+		height: 37px
+		padding: 20px
+		border-radius: 50%
+		margin-right: 10px
+		font-size: 15px
+		font-weight: bold
+		color: #442751
+	&__last-block
+		margin-top: 20px
+		display: flex
+		align-items: flex-start
+		justify-content: flex-start
+	&__last-block span
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #FFEFEA
+		width: 37px
+		height: 37px
+		padding: 20px
+		border-radius: 50%
+		margin-right: 10px
+	&__last-block span img
+		height: 17px
+
+@media (min-width: 900px)
+	.catalog-description
+		padding-top: 140px
+		padding-bottom: 140px
+		&__wrap h1
+			margin-bottom: 15px
+			font-size: 30px
+		&__wrap-text div h1
+			margin-top: 40px
+		&__wrap-text div h1:first-child
+			margin-top: 0
+		&__wrap p
+			font-size: 18px
+		&__list
+			margin-top: 40px
+		&__list li
+			margin-top: 30px
+		&__list span
+			width: 60px
+			height: 60px
+			padding: 20px
+			margin-right: 20px
+			font-size: 18px
+		&__last-block
+			margin-top: 40px
+		&__last-block span
+			width: 60px
+			height: 60px
+			margin-right: 20px
+		&__last-block span img
+			height: auto
+
+@media (min-width: 1000px)
+	.catalog-description
+		&__wrap-text
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+		&__wrap-text img
+			display: block
+			width: 50%
+			margin-left: 5%
+			border-radius: 10px

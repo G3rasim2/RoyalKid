@@ -1,0 +1,167 @@
+.thank-you-main
+	background: #FFEFEA url(../img/thank-you.png) no-repeat
+	background-position: calc(50% - 95px) 100%
+	background-size: 570px
+	height: 100vh
+	padding: 20px 0 20px 0
+	&__wrap
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+
+.thank-you-top
+	& img
+		display: block
+		width: 113px
+		margin: auto
+	& div
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 20px
+	& div a
+		text-decoration: none
+		font-size: 14px
+		color: #201325
+		cursor: pointer
+	& div a:hover,
+	& div a:focus
+		font-weight: 600
+
+.thank-you-middle
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+	margin-top: 35px
+	& h1
+		font-size: 24px
+	& p
+		font-size: 16px
+		margin: 20px 0
+	& a
+		text-decoration: none
+		font-size: 16px
+		color: #fff
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 256px
+		height: 57px
+		background: #442751
+		border-radius: 50px
+		cursor: pointer
+	& a:hover,
+	& a:focus
+		font-weight: 600
+
+.thank-you-bottom
+	margin: auto
+	margin-bottom: 0
+	display: flex
+	background: #fff
+	border-radius: 10px
+	position: relative
+	max-width: 290px
+	&:hover,
+	&:focus
+		box-shadow: 0 0 15px rgba(#442751, .1)
+	& a
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-radius: 10px
+		cursor: pointer
+	& span
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #FFEFEA
+		width: 53px
+		height: 53px
+		padding: 26px
+		border-radius: 50%
+		margin: auto 10px
+		margin-top: 16px
+	& div
+		padding: 16px
+		padding-left: 0
+		height: 108px
+	& h2
+		font-size: 16px
+		margin: 0
+		margin-bottom: 3px
+	& p
+		font-size: 14px
+		margin: 0
+
+@media (min-width: 900px)
+	.thank-you-main
+		background-position: center
+		background-size: auto
+		height: 100vh
+		padding: 50px 0 100px 0
+
+	.thank-you-top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		& img
+			width: auto
+			margin: 0
+		& div
+			flex-direction: column
+			margin-top: 0
+		& div a
+			font-size: 16px
+			margin-top: 10px
+			position: relative
+		& div a:first-child::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: -30px
+			width: 21px
+			height: 21px
+			background: url(../img/phone-call.svg) no-repeat center
+
+	.thank-you-middle
+		align-items: flex-start
+		text-align: left
+		margin: auto 0
+		& h1
+			font-size: 48px
+		& p
+			font-size: 20px
+			max-width: 490px
+		& p br
+			display: none
+		& a
+			font-size: 18px
+			width: 274px
+			height: 63px
+			margin-top: 30px
+
+	.thank-you-bottom
+		margin-left: 0
+		max-width: 433px
+		& span
+			width: 78px
+			height: 78px
+			margin: auto 30px
+			margin-right: 20px
+		& span img
+			height: 32px
+		& div
+			padding: 23px
+			padding-left: 0
+			height: 123px
+		& h2
+			font-size: 16px
+		& p
+			font-size: 16px

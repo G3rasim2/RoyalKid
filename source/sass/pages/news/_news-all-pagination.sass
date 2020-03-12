@@ -1,0 +1,87 @@
+.news-all-pagination
+    margin: auto
+    margin-top: 30px
+    margin-bottom: 40px
+    width: 290px
+
+ul.news-all-pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    margin: auto
+    width: 290px
+    border-radius: 50px
+    box-shadow: 0px 0 15px 0px rgba(#442751, .1)
+
+ul.news-all-pagination li
+    position: relative
+    display: inline
+
+ul.news-all-pagination li a,
+ul.news-all-pagination li p
+    color: #442751
+    background-color: #fff
+    float: left
+    padding: 8px 16px
+    margin: 0
+    text-decoration: none
+    transition: background-color .2s
+    border: 1px solid #EFEBF2
+    font-size: 14px
+    cursor: pointer
+
+ul.news-all-pagination li:first-child a
+    border-top-left-radius: 50px
+    border-bottom-left-radius: 50px
+
+ul.news-all-pagination li:last-child a
+    border-top-right-radius: 50px
+    border-bottom-right-radius: 50px
+
+ul.news-all-pagination li a.active
+    background-color: #442751
+    color: #fff
+
+ul.news-all-pagination li a:hover:not(.active),
+ul.news-all-pagination li p:hover:not(.active)
+    background-color: #442751
+    color: #fff
+
+ul.news-all-pagination li select
+    appearance: none
+    padding: 9px 16px
+    transition: background-color .2s
+    border: 1px solid #EFEBF2
+    font-size: 14px
+    cursor: pointer
+
+ul.news-all-pagination li select option
+    color: #8E8E8E
+
+ul.news-all-pagination li select option:checked
+    display: none
+
+.news-all-pagination__div
+    display: none
+    &--on
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 100%
+        z-index: 300px
+
+@media (min-width: 900px)
+    .news-all-pagination
+        margin: 50px auto
+        margin-bottom: 100px
+    ul.news-all-pagination
+        box-shadow: -70px 0 15px 0px rgba(#442751, .1),70px 0 15px 0px rgba(#442751, .1)
+
+    ul.news-all-pagination li a,
+    ul.news-all-pagination li p
+        font-size: 18px
+        padding: 10px 25px
+
+    ul.news-all-pagination li select
+        padding: 14px 25px

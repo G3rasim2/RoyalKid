@@ -1,0 +1,206 @@
+.nav
+	background: #FBF4FF
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 200
+	&__wrap
+		font-size: 14px
+		color: #201325
+	&__wrap a
+		font-size: 14px
+		color: #201325
+		text-decoration: none
+	&__wrap a:hover,
+	&__wrap a:focus
+		color: #54455B
+	&__wrap a:active
+		color: #442751
+	&__wrap-btn
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 50px
+	&__btn-menu
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		width: 36px
+		height: 36px
+		background: transparent
+		border: none
+		outline: none
+		cursor: pointer
+		z-index: 100
+		transition: 0.2s
+	&__btn-menu span,
+	&__btn-menu span::before,
+	&__btn-menu span::after
+		position: absolute
+		top: calc(50% - 1px)
+		left: 0
+		content: ''
+		width: 20px
+		height: 1px
+		border-radius: 2px
+		background-color:#442751
+		transition: 0.5s
+	&__btn-menu span::before
+		transform: translateY(-7px)
+	&__btn-menu span::after
+		transform: translateY(7px)
+	&__btnMenuActive span
+		height: 0
+	&__btnMenuActive span::before
+		transform: rotate(-45deg)
+	&__btnMenuActive span::after
+		transform: rotate(45deg)
+	&__btn
+		background-color: transparent
+		background: url(../img/phone-call.svg) no-repeat center
+		border: 1px solid #442751
+		border-radius: 50%
+		width: 36px
+		height: 36px
+		font-size: 0px
+		color: #201325
+		cursor: pointer
+		background-size: 16px
+	&__wrap-list
+		display: none
+		flex-direction: column
+		padding-bottom: 37px
+	&__navActive
+		display: flex
+	&__list
+		margin: 0
+		padding: 0
+		list-style: none
+		margin-top: 20px
+	&__list li
+		margin-bottom: 30px
+	&__block
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 110px
+		margin-top: 20px
+	&__block p
+		position: relative
+		padding-left: 30px
+		padding-top: 2px
+	&__block p::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 21px
+		height: 21px
+		background: url(../img/clock.svg) no-repeat center
+		background-size: 21px
+	&__block div
+		display: flex
+		flex-direction: column
+	&__block a
+		position: relative
+		padding-left: 30px
+		margin: 3px 0
+	&__block a:first-child::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 21px
+		height: 21px
+		background: url(../img/phone-call.svg) no-repeat center
+
+@media (min-width: 900px)
+	.nav
+		position: relative
+		&__wrap
+			display: flex
+			flex-direction: row-reverse
+			justify-content: space-between
+			align-items: center
+			height: 81px
+		&__wrap-btn
+			height: auto
+		&__btn-menu
+			display: none
+		&__btn
+			background: transparent
+			border: 1px solid #442751
+			border-radius: 50px
+			width: auto
+			height: auto
+			padding: 10px 20px
+			font-size: 14px
+		&__btn:hover
+			background: #4D3359
+			color: #fff
+		&__btn:active
+			background: #4D3359
+			color: #fff
+		&__wrap-list
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			padding-bottom: 0
+			width: 79%
+		&__list
+			list-style: none
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			width: 75%
+			align-items: center
+			margin-top: 0px
+		&__list li
+			margin: 0
+		&__block
+			display: flex
+			margin: 0
+			height: auto
+		&__block p
+			display: none
+		&__block div
+			display: flex
+			flex-direction: column
+		&__block a
+			margin: 
+			margin-top: 3px
+
+@media (min-width: 1100px)
+	.nav
+		&__list li
+			display: flex
+			align-items: center
+		&__list li span
+			width: 5px
+			height: 5px
+			margin: auto
+			background: #E1DAE5
+			border-radius: 50%
+
+@media (min-width: 1300px)
+	.nav
+		&__wrap-list
+			width: 85%
+		&__list
+			width: 55%
+			max-width: 603px
+		&__block
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			width: 440px
+		&__block p
+			display: block
+
+@media (min-width: 1600px)
+	.nav
+		&__wrap-list
+			width: 88%

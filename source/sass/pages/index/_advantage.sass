@@ -1,0 +1,130 @@
+.advantage
+	margin-top: 20px
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__list
+		list-style: none
+		margin-top: 0
+		padding: 35px 20px
+		padding-right: 10px
+		display: flex
+		flex-direction: column
+		background: #fff
+		border-radius: 10px
+		box-shadow: 0 4px 15px rgba(#442751, .06)
+	&__list li
+		position: relative
+		padding-left: 60px
+		margin-bottom: 30px
+	&__list li:last-child
+		margin-bottom: 0
+	&__list li::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 50px
+		height: 50px
+		border-radius: 50%
+	&__list li:first-child::before
+		background: #FFEBE6 url(../img/advantage/img1.svg) no-repeat center
+		background-size: 24px
+	&__list li:nth-child(2)::before
+		background: #FFEBE6 url(../img/advantage/img2.svg) no-repeat center
+		background-size: 18px
+	&__list li:last-child::before
+		background: #FFEBE6 url(../img/advantage/img3.svg) no-repeat center
+		background-size: 24px
+	&__list h3
+		color: #201325
+		font-size: 16px
+		margin-top: 0
+		margin-bottom: 5px
+		font-weight: 600
+	&__list p
+		font-size: 14px
+		color:#413D43
+		margin: 0
+
+#advantage-carousel .owl-dots
+	position: absolute
+	bottom: 10px
+	left: calc(50% - 40px)
+
+#advantage-carousel .owl-dots .owl-dot span
+	background: #C4C4C4
+#advantage-carousel .owl-dots .active span
+	background: #442751
+#advantage-carousel .owl-dots .owl-dot:hover span,
+#advantage-carousel .owl-dots .owl-dot:focus span
+	background: rgba(#442751, .5)
+
+#advantage-carousel .owl-nav button.owl-prev,
+#advantage-carousel .owl-nav button.owl-next
+	position: absolute
+
+@media (min-width: 900px)
+	.advantage
+		&__list
+			width: 100%
+			margin-top: 20px
+			padding: 35px 20px
+			padding-right: 10px
+			flex-direction: row
+			justify-content: space-between
+		&__list li
+			padding-left: 90px
+			margin-bottom: 0
+			margin: 0 10px
+		&__list li:first-child
+			width: 285px
+		&__list li:nth-child(2)
+			width: 440px
+		&__list li:last-child
+			width: 360px
+		&__list li::before
+			width: 78px
+			height: 78px
+		&__list li:first-child::before,
+		&__list li:nth-child(2)::before,
+		&__list li:last-child::before
+			background-size: auto
+		&__list h3
+			margin-top: 5px
+			font-size: 16px
+		&__list p
+			font-size: 14px
+
+	#advantage-carousel .owl-nav button.owl-prev,
+	#advantage-carousel .owl-nav button.owl-next
+		position: absolute
+		top: calc(50% - 25px)
+		width: 50px
+		height: 50px
+		border: 1px solid #331F3C
+		border-radius: 50%
+	#advantage-carousel .owl-nav button
+		background: url(../img/arrow-left.svg) no-repeat center
+	#advantage-carousel .owl-nav button.owl-prev
+		left: 20px
+	#advantage-carousel .owl-nav button.owl-next
+		right: 20px
+		transform: rotate(180deg)
+	#advantage-carousel .owl-nav button:hover,
+	#advantage-carousel .owl-nav button:focus
+		background: #331F3C url(../img/arrow.svg) no-repeat center
+
+@media (min-width: 1200px)
+	.advantage
+		&__list h3
+			font-size: 18px
+		&__list p
+			font-size: 16px
+
+@media (min-width: 1300px)
+	.advantage
+		&__list
+			padding-left: 8%
+			padding-right: 8%

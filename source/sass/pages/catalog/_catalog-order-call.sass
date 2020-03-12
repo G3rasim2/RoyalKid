@@ -1,0 +1,133 @@
+.catalog-order-call
+	background: #FFEFEA
+	margin-top: 20px
+	&__wrap
+		padding: 45px 0
+	&__div h1,
+	&__div p
+		margin: 0
+	&__div h1
+		font-size: 20px
+		margin-bottom: 20px
+	&__div p
+		font-size: 14px
+		margin-bottom: 10px
+		max-width: 410px
+	&__div a
+		text-decoration: none
+		font-weight: 600
+		color: #442751
+	&__form
+		display: flex
+		flex-wrap: wrap
+		margin-top: 25px
+	&__form input
+		font-size: 14px
+		padding: 17px 20px
+		width: 290px
+		background: #FFEFEA
+		border-radius: 50px
+		border: 1px solid #B9B9B9
+		margin-bottom: 10px
+	&__form input::placeholder
+		font-size: 14px
+		color: #3D3232
+	&__form input:hover,
+	&__form input:focus
+		border-color: #C4B1D0
+	&__form button
+		font-size: 14px
+		color: #fff
+		border: none
+		padding: 20px 20px
+		margin-top: 10px
+		height: 60px
+		width: 290px
+		background: #442751
+		border-radius: 50px
+		cursor: pointer
+	&__form button:hover,
+	&__form button:focus
+		font-weight: 500
+	&__form label
+		display: flex
+		margin-top: 10px
+		position: relative
+		width: 100%
+	&__form label p
+		margin: 0
+		padding-left: 30px
+		font-size: 12px
+		color: rgba(#1D3B3C, .55)
+		width: 90%
+		max-width: 320px
+	&__form label p a
+		color: rgba(#1D3B3C, .55)
+		font-weight: 500
+	&__form input[type="checkbox"] + span
+		position: absolute
+		top: 3px
+		left: 0
+		width: 24px
+		height: 24px
+		border-radius: 50%
+		border: 1px solid #442751
+	&__form input[type="checkbox"]:checked + span:before
+		content: ''
+		position: absolute
+		top: calc(50% - 8px)
+		left: calc(50% - 8px)
+		width: 16px
+		height: 16px
+		border-radius: 50%
+		background: #442751
+
+@media (min-width: 610px)
+	.catalog-order-call
+		&__form input
+			margin-right: 10px
+
+@media (min-width: 900px)
+	.catalog-order-call
+		&__wrap
+			padding: 90px 0
+			background: url(../img/catalog/catalog-stroller.png) no-repeat 510px 26px
+		&__div h1
+			font-size: 30px
+			margin-bottom: 30px
+		&__div p
+			font-size: 18px
+			margin-bottom: 30px
+			max-width: 100%
+		&__div p br
+			display: none
+		&__div p:last-child
+			margin-bottom: 0
+		&__div
+			max-width: 512px
+		&__form input
+			font-size: 16px
+			padding: 20px 30px
+			margin-bottom: 10px
+		&__form input::placeholder
+			font-size: 16px
+		&__form button
+			font-size: 16px
+			margin-top: 0
+		&__form label p
+			font-size: 16px
+			max-width: 100%
+		&__form input[type="checkbox"] + span
+			top: 0
+
+@media (min-width: 1500px)
+	.catalog-order-call
+		&__wrap
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+		&__div
+			width: 100%
+		&__form
+			width: 900px
+			margin-left: auto

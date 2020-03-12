@@ -1,0 +1,130 @@
+.footer
+	background: #FDF9FF
+	padding-top: 30px
+	padding-bottom: 20px
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		flex-wrap: wrap
+	&__wrap a:hover,
+	&__wrap a:focus
+		color: #442751
+	&__logo
+		height: 35px
+	&__regulations
+		order: 1
+		display: flex
+		flex-direction: column
+		margin-top: 20px
+	&__regulations a
+		font-size: 12px
+		color: #636060
+	&__regulations a:nth-child(2)
+		margin-top: 20px
+	&__copyright
+		order: 2
+		font-size: 12px
+		margin-top: 20px
+	&__catalog
+		display: none
+	&__anchor
+		display: none
+	&__contacts > a
+		display: block
+		margin-top: 20px
+		text-decoration: none
+		font-size: 14px
+		color: #201325
+		padding-left: 25px
+		background: url(../img/phone-call.svg) no-repeat
+		background-size: 18px
+	&__contacts div
+		margin-top: 20px
+		display: flex
+	&__contacts div a
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 17px
+		background: #FFEFEA
+		width: 37px
+		height: 37px
+		border-radius: 50%
+	&__address
+		margin-top: 20px
+	&__address a
+		text-decoration: none
+		font-size: 14px
+		color: #442751
+		padding: 10px 23px
+		border: 1px solid #442751
+		border-radius: 50px
+		background: transparent
+	&__address a:hover,
+	&__address a:focus
+		background: #442751
+		color: #fff
+	&__address p
+		display: block
+		margin-top: 25px
+		padding-left: 30px
+		font-size: 14px
+		padding-bottom: 10px
+	&__address p:nth-child(2)
+		background: url(../img/marker.svg) no-repeat
+		background-size: 21px
+		padding-bottom: 0
+	&__address p:nth-child(3)
+		margin-top: 0
+		background: url(../img/clock.svg) no-repeat
+		background-size: 21px
+	&__address div
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 290px
+
+@media (min-width: 900px)
+	.footer
+		&__wrap
+			height: 250px
+		&__regulations
+			margin-top: 50px
+			order: 0
+		&__copyright
+			margin-top: 50px
+			order: 0
+		&__contacts > a:first-child
+			margin-top: 0
+		&__address
+			margin-top: 5px
+		&__address p
+			margin-top: 30px
+			font-size: 14px
+		&__address p:nth-child(3)
+			margin-top: 25px
+			margin-bottom: 20px
+
+
+@media (min-width: 1200px)
+	.footer
+		padding: 45px 0
+		&__wrap
+			height: 250px
+		&__logo
+			height: 53px
+		&__catalog,
+		&__anchor
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			font-size: 14px
+		&__catalog a,
+		&__anchor a
+			text-decoration: none
+			color: #6D6D6E
+			margin-top: 15px
+		&__catalog a:first-child,
+		&__anchor a:first-child
+			margin-top: 0

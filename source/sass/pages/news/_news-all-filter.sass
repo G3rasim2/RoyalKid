@@ -1,0 +1,123 @@
+.news-all-filter
+	display: flex
+	flex-direction: column
+	& h1
+		text-align: center
+	& select
+		appearance: none
+		margin: 20px auto
+		border: 1px solid #E1DAE5
+		background: url(../img/arrow-down.svg) no-repeat 90% 51%
+		background-size: 14px
+		color: #442751
+		font-size: 14px
+		width: 290px
+		height: 53px
+		padding: 10px 25px
+		border-radius: 50px
+	& select:focus
+		background-color: #fff
+		background-image: url(../img/arrow-up.svg)
+	& select div
+		margin: 20px 0
+	& option
+		color: #8E8E8E
+		font-size: 18px
+	& option:checked
+		display: none
+	&__controls
+		list-style: none
+		padding: 0
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		border-radius: 10px
+		width: 290px
+		margin: auto
+	&__controls li
+		width: 100%
+	&__controls li:first-child
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+	&__controls li:last-child
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
+	&__controls label
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 15px
+		font-size: 14px
+		color: #442751
+		text-transform: uppercase
+		cursor: pointer
+		border: 1px solid #E1DAE5
+		border-bottom: none
+	&__controls label:hover
+		background: #442751
+		color: #fff
+	&__controls li:first-child label
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+	&__controls li:last-child label
+		border-bottom: 1px solid #E1DAE5
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
+
+#news-all:checked ~ .news-all-filter__controls label[for="news-all"]
+	background: #442751
+	color: #fff
+#news-shop:checked ~ .news-all-filter__controls label[for="news-shop"]
+	background: #442751
+	color: #fff
+#news-about-goods:checked ~ .news-all-filter__controls label[for="news-about-goods"]
+	background: #442751
+	color: #fff
+#instagram-posts:checked ~ .news-all-filter__controls label[for="instagram-posts"]
+	background: #442751
+	color: #fff
+
+@media (min-width: 925px)
+	.news-all-filter
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		& h1
+			text-align: left
+		& select
+			margin: 0
+			font-size: 20px
+			width: 347px
+			height: 70px
+			padding: 17px 36px
+		&__controls
+			flex-direction: row
+			justify-content: flex-start
+			width: auto
+			margin: 30px 0
+			margin-bottom: 60px
+		&__controls li
+			width: auto
+		&__controls label
+			padding: 15px 30px
+			border-bottom: 1px solid #E1DAE5
+			border-left: none
+		&__controls li:first-child label
+			border-left: 1px solid #E1DAE5
+		&__controls li:first-child
+			border-top-right-radius: 0
+			border-top-left-radius: 50px
+			border-bottom-left-radius: 50px
+		&__controls li:last-child
+			border-bottom-left-radius: 0
+			border-top-right-radius: 50px
+			border-bottom-right-radius: 50px
+		&__controls li:first-child label
+			border-top-right-radius: 0
+			border-top-left-radius: 50px
+			border-bottom-left-radius: 50px
+		&__controls li:last-child label
+			border-bottom-left-radius: 0
+			border-top-right-radius: 50px
+			border-bottom-right-radius: 50px

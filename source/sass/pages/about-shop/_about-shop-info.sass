@@ -1,0 +1,47 @@
+.about-shop-info
+	margin: 30px 0
+	margin-bottom: 50px
+	&__wrap
+		text-align: center
+	&__list
+		list-style: none
+		padding: 0
+		margin-top: 25px
+	&__list
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+	&__list li
+		margin-top: 10px
+		padding: 20px
+		border-radius: 10px
+		width: 290px
+		background: #fff
+		box-shadow: 0 0 15px rgba(#442751, .1)
+		height: 87px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	&__list p
+		font-size: 12px
+		margin: 0
+		margin: 3px 0
+	&__list span
+		font-weight: 600
+
+@media (min-width: 900px)
+	.about-shop-info
+		margin: 130px 0
+		&__list
+			margin-top: 40px
+		&__list
+			flex-direction: row
+			flex-wrap: wrap
+		&__list li
+			padding: 10px
+			width: 32%
+			height: 123px
+		&__list p
+			font-size: 20px

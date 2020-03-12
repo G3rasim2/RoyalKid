@@ -1,0 +1,109 @@
+.payment
+	padding: 23px 0
+	&__wrap
+		margin-top: 20px
+	&__title
+		text-align: center
+	&__cards
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__cards div
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 40px 20px
+		padding-top: 90px
+		padding-right: 10px
+		margin-top: 20px
+		font-size: 14px
+		border-radius: 10px
+		width: 100%
+		max-width: 789px
+	&__cards h1
+		margin-bottom: 10px
+	&__cards p
+		margin-top: 0
+	&__delivery p
+		max-width: 430px
+	&__delivery
+		background: #FFEFEA url(../img/delivery.png) no-repeat 90% 0
+		background-size: 260px
+		color: #2A272C
+	&__payment
+		background: #442751 url(../img/payment.png) no-repeat 80% 0
+		background-size: 190px
+	&__payment h1
+		color: #fff
+	&__payment p
+		color: #fff
+		max-width: 502px
+	&__cards a
+		text-align: center
+		text-decoration: none
+		width: 250px
+		padding: 20px
+		margin-top: 20px
+		border: none
+		border-radius: 50px
+		font-size: 16px
+		cursor: pointer
+	&__btn-purple
+		background: #442751
+		color: #fff
+	&__btn-purple:hover,
+	&__btn-purple:focus
+		box-shadow: 0 0 15px rgba(#000, .1)
+		font-weight: 500
+	&__btn-purple:active
+		box-shadow: none
+		font-weight: 400
+		background: #513261
+	&__btn-white
+		background: #fff
+		color: #685353
+	&__btn-white:hover,
+	&__btn-white:focus
+		box-shadow: 0 0 15px rgba(#000, .1)
+		font-weight: 500
+	&__btn-white:active
+		box-shadow: none
+		font-weight: 400
+
+@media (min-width: 400px)
+	.payment
+		&__title br
+			display: none
+
+@media (min-width: 900px)
+	.payment
+		padding: 60px 0
+		&__title
+			text-align: left
+		&__cards
+			flex-direction: row
+			align-items: stretch
+		&__cards div
+			padding: 40px 40px
+			padding-top: 90px
+			padding-right: 10px
+			margin-top: 40px
+			font-size: 18px
+		&__delivery
+			background-size: 290px
+			margin-right: 10px
+		&__payment
+			background-size: 220px
+			margin-left: 10px
+
+@media (min-width: 1300px)
+	.payment
+		&__delivery
+			background-size: auto
+			color: #2A272C
+			margin-right: 10px
+		&__delivery p:nth-child(2)
+			max-width: 461px
+		&__payment
+			background-size: auto
+			margin-left: 10px

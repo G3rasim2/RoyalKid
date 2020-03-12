@@ -1,0 +1,45 @@
+.delivery-payment
+	&__wrap
+	&__controls
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 20px
+	&__controls label
+		display: flex
+		align-items: center
+		width: 290px
+		height: 53px
+		padding-left: 20px
+		background-color: #fff
+		border-radius: 10px
+		margin-top: 10px
+		margin-right: 10px
+		font-size: 14px
+		cursor: pointer
+	&__controls img
+		width: 24px
+		margin-right: 10px
+
+#deliveryToggle:checked ~ .delivery-payment__controls label[for="deliveryToggle"],
+#paymentToggle:checked ~ .delivery-payment__controls label[for="paymentToggle"]
+	background-color: #FBF4FF
+	border: 1px solid #EADDF1
+	font-weight: 600
+
+#deliveryToggle:checked ~ .delivery-payment-delivery,
+#paymentToggle:checked ~ .delivery-payment-payment
+	display: block
+
+@media (min-width: 900px)
+	.delivery-payment
+		&__controls
+			justify-content: flex-start
+		&__controls label
+			width: 330px
+			height: 100px
+			padding-left: 30px
+			margin-right: 20px
+			font-size: 18px
+		&__controls img
+			width: auto
+			margin-right: 20px

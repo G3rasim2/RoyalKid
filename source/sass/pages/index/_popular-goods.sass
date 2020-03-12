@@ -1,0 +1,107 @@
+.popular-goods
+	padding: 20px 0
+	&__slider
+		display: flex
+		flex-direction: column
+	&__top
+		display: flex
+		flex-direction: column-reverse
+		justify-content: space-between
+	&__top h1
+		display: none
+		text-align: center
+		margin: 10px 0
+		margin-top: 30px
+	&__controls
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__controls label
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 290px
+		height: 64px
+		padding-left: 32px
+		text-align: center
+		font-size: 16px
+		border: 2px solid #EBDDF1
+		border-radius: 5px
+		margin: 5px 0
+		cursor: pointer
+	&__controls label:first-child
+		background: #EBDDF1 url(../img/popular-goods/popular.svg) no-repeat 38px center
+	&__controls label:nth-child(2)
+		background: #EBDDF1 url(../img/popular-goods/new.svg) no-repeat 85px center
+	&__controls label:last-child
+		background: #EBDDF1 url(../img/popular-goods/discount.svg) no-repeat 93px center
+	&__controls label:hover,
+	&__controls label:focus
+		background-color: #513261
+		border-color: #7A5A88
+		color: #fff
+	&__controls label:first-child:hover,
+	&__controls label:first-child:focus
+		background-image: url(../img/popular-goods/popular-active.svg)
+	&__controls label:nth-child(2):hover,
+	&__controls label:nth-child(2):focus
+		background-image: url(../img/popular-goods/new-active.svg)
+	&__controls label:last-child:hover,
+	&__controls label:last-child:focus
+		background-image: url(../img/popular-goods/discount-active.svg)
+	&__controls label:active
+		background-color: #442751
+
+#popularProducts,
+#newProducts,
+#discountsProducts
+	display: none
+
+#popularProductsToggle:checked ~ .popular-goods__wrapper #popularProductsTitle,
+#newProductsToggle:checked ~ .popular-goods__wrapper #newProductsTitle,
+#discountsProductsToggle:checked ~ .popular-goods__wrapper #discountsProductsTitle
+	display: flex
+#popularProductsToggle:checked ~ .popular-goods__wrapper #popularProducts,
+#newProductsToggle:checked ~ .popular-goods__wrapper #newProducts,
+#discountsProductsToggle:checked ~ .popular-goods__wrapper #discountsProducts
+	display: flex
+#popularProductsToggle:checked ~ .popular-goods__wrapper label[for="popularProductsToggle"]
+	background: #442751 url(../img/popular-goods/popular-active.svg) no-repeat 38px center
+	border-color: #7A5A88
+	color: #fff
+#newProductsToggle:checked ~ .popular-goods__wrapper label[for="newProductsToggle"]
+	background: #442751 url(../img/popular-goods/new-active.svg) no-repeat 85px center
+	color: #fff
+	border-color: #7A5A88
+#discountsProductsToggle:checked ~ .popular-goods__wrapper label[for="discountsProductsToggle"]
+	background: #442751 url(../img/popular-goods/discount-active.svg) no-repeat 93px center
+	color: #fff
+	border-color: #7A5A88
+
+@media (min-width: 900px)
+	.popular-goods
+		padding: 100px 0
+		&__top
+			flex-direction: column
+			align-items: center
+		&__top h1
+			text-align: left
+			margin: 15px 0
+		&__controls
+			flex-direction: row
+		&__controls label
+			margin-right: 10px
+		&__controls label:last-child
+			margin-right: 0
+
+@media (min-width: 1250px)
+	.popular-goods
+		&__top
+			flex-direction: row
+			align-items: center
+		&__controls
+			flex-direction: row
+		&__controls label
+			margin-right: 20px
+		&__controls label:last-child
+			margin-right: 0

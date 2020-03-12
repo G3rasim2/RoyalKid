@@ -1,0 +1,87 @@
+.request-accepted
+	position: fixed
+	width: 290px
+	height: 194px
+	top: calc(50% - 97px)
+	left: calc(50% - 145px)
+	background: #FFEFEA
+	background-size: 101px
+	border-radius: 10px
+	z-index: 102
+	display: none
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		top: 95px
+		left: 167px
+		height: 154px
+		width: 154px
+		background: #F9E7E0 url(../img/request-accepted.svg) no-repeat 7px 18px
+		background-size: 101px
+		border-radius: 50%
+	&--active
+		display: block
+	&__wrap
+		padding: 20px
+		padding-bottom: 30px
+		display: flex
+		flex-direction: column
+	&__btn-close
+		width: 20px
+		height: 20px
+		padding: 0
+		border: none
+		background: transparent
+		position: relative
+		margin-left: auto
+	&__btn-close::before,
+	&__btn-close::after
+		content: ''
+		position: absolute
+		top: 9px
+		width: 20px
+		height: 2px
+		background: #442751
+	&__btn-close::before
+		right: 0
+		transform: rotate(45deg)
+	&__btn-close::after
+		left: 0
+		transform: rotate(-45deg)
+	&__wrap h1
+		margin-top: 16px
+	&__wrap p
+		font-size: 14px
+		line-height: 1.45
+		margin-top: 5px
+
+@media (min-width: 900px)
+	.request-accepted
+		width: 632px
+		height: 340px
+		top: calc(50% - 170px)
+		left: calc(50% - 316px)
+		background: #FFEFEA
+		&::before
+			top: 142px
+			left: auto
+			right: 31px
+			height: 246px
+			width: 246px
+			background: #F9E7E0
+		&::after
+			content: ''
+			position: absolute
+			top: 162px
+			right: 56px
+			height: 169px
+			width: 238px
+			background: url(../img/request-accepted.svg) no-repeat center
+		&__wrap
+			padding: 40px
+		&__wrap h1
+			margin-top: 35px
+		&__wrap p
+			margin-top: 16px
+			font-size: 18px

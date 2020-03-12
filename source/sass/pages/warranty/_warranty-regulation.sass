@@ -1,0 +1,42 @@
+.warranty-regulation
+	margin: 50px 0
+	&__wrap h1
+		margin-top: 40px
+	&__wrap p
+		font-size: 14px
+	&__wrap b
+		font-weight: 500
+	&__wrap p br
+		display: none
+	&__text--off-1,
+	&__text--off-2
+		display: none
+	&__text--on-1,
+	&__text--on-2
+		display: block
+	&__text-toggle-1,
+	&__text-toggle-2
+		font-size: 12px
+		color: #8E8E8E
+
+@media (min-width: 900px)
+	.warranty-regulation
+		margin: 120px 0
+		&__wrap
+			max-width: 1429px
+		&__wrap h1
+			margin-top: 65px
+			margin-bottom: 35px
+		&__wrap p
+			font-size: 18px
+		&__text-toggle-1,
+		&__text-toggle-2
+			display: none
+		&__text--off-1,
+		&__text--off-2
+			display: block
+
+@media (min-width: 1358px)
+	.warranty-regulation
+		&__wrap p br
+			display: block

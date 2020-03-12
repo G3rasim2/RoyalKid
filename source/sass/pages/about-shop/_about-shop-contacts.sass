@@ -1,0 +1,80 @@
+.about-shop-contacts
+	margin: 40px 0
+	margin-bottom: 30px
+	&__list
+		list-style: none
+		padding: 0
+		margin-top: 25px
+	&__list li
+		padding: 20px
+		margin-top: 10px
+		border-radius: 10px
+		max-width: 433px
+		display: flex
+		align-items: center
+		background: #fff
+		box-shadow: 0 0 15px rgba(#442751, .1)
+	&__list h3
+		font-size: 14px
+		margin: 0
+	&__list p
+		font-size: 12px
+		margin: 0
+		margin-top: 6px
+	&__list div
+		width: 80%
+	&__list span
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 53px
+		height: 53px
+		padding: 20px
+		margin-right: 10px
+		background: #FFEFEA
+		border-radius: 50%
+	&__list img
+		height: 21px
+
+@media (min-width: 900px)
+	.about-shop-contacts
+		margin-top: 130px
+		margin-bottom: 50px
+		&__wrap h1
+			text-align: center
+		&__list
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-bottom: 50px
+			margin-top: 40px
+		&__list li
+			width: 100%
+			padding: 30px
+			margin-left: 10px
+		&__list h3
+			font-size: 16px
+		&__list p
+			font-size: 16px
+			margin-top: 10px
+		&__list span
+			width: 78px
+			height: 78px
+			margin-right: 20px
+		&__list img
+			height: 32px
+
+@media (min-width: 1400px)
+	.about-shop-contacts
+		&__list
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			max-width: 1271px
+			margin: auto
+			margin-top: 40px
+		&__list li
+			max-width: 399px
+		&__list li:first-child
+			max-width: 433px
+			margin-left: 0

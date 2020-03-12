@@ -1,0 +1,212 @@
+.delivery-payment-delivery
+	display: none
+	padding-bottom: 30px
+	&__wrap > p
+		font-size: 14px
+		max-width: 1110px
+	&__anchor
+		display: flex
+		flex-direction: column
+		margin-top: 20px
+	&__wrap b
+		font-weight: 600
+	&__anchor a
+		text-decoration: none
+		font-size: 14px
+		color: #201325
+		background: #fff
+		border-radius: 10px
+		border: 1px solid #EADDF1
+		margin-bottom: 10px
+		display: flex
+		padding-left: 20px
+		align-items: center
+		max-width: 410px
+		height: 53px
+	&__anchor a:hover,
+	&__anchor a:focus
+		background: #EADDF1
+		font-weight: 600
+	&__anchor a:active
+		font-weight: 400
+	&__wrap h2
+		font-size: 16px
+		margin: 0
+		margin-top: 20px
+	&__block-mcad h2
+		margin: 0
+	&__wrap > div
+		padding: 20px 0
+		border-bottom: 1px solid #E1DAE5
+	&__wrap > div:nth-child(3)
+		border: none
+		padding: 0
+	&__wrap > div:last-child
+		border: none
+	&__wrap ul
+		list-style: none
+		padding: 0
+		margin-bottom: 0
+	&__wrap ul li
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		justify-content: space-between
+	&__wrap ul h3
+		font-size: 14px
+		font-weight: 600
+		display: flex
+		align-items: center
+		margin: 0
+		margin-top: 10px
+	&__wrap ul img
+		height: 20px
+		margin-right: 10px
+	&__wrap ul div
+		max-width: 480px
+	&__wrap ul p
+		font-size: 14px
+		max-width: 480px
+		margin: 0
+		margin-top: 15px
+	&__wrap ul span
+		font-size: 16px
+		font-weight: 600
+		color: #442751
+		width: 251px
+		height: 49px
+		margin-top: 15px
+		margin-bottom: 20px
+		background: #fff
+		border-radius: 10px
+		box-shadow: 0 0 15px rgba(#442751, .1)
+		display: flex
+		justify-content: center
+		align-items: center
+	&__subtext
+		font-size: 12px
+		margin: 0
+		display: flex
+		align-items: flex-start
+		padding-bottom: 20px
+	&__subtext p
+		font-size: 12px
+		margin: 0
+	&__subtext img
+		margin-right: 5px
+		height: 17px
+	&__region-text p
+		font-size: 14px
+		font-weight: 600
+		display: flex
+		align-items: flex-start
+	&__region-text p:first-child
+		margin: 18px 0
+	&__region-text img
+		margin-right: 10px
+		height: 17px
+	&__region-img
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+	&__region-img img
+		width: 79px
+		margin-right: 10px
+	&__region-img img:last-child
+		margin-right: 0
+	&__region-text-2
+		font-size: 14px
+
+@media (min-width: 420px)
+	.delivery-payment-delivery
+		&__wrap h2 br
+			display: none
+		&__anchor a br
+			display: none
+
+@media (min-width: 900px)
+	.delivery-payment-delivery
+		padding-top: 50px
+		padding-bottom: 80px
+		&__wrap > p
+			font-size: 18px
+			margin-bottom: 0
+		&__anchor
+			display: none
+		&__wrap > div
+			padding-top: 70px
+		&__wrap h2
+			font-size: 22px
+			margin: 0
+			margin-bottom: 45px
+		&__wrap ul
+			margin: 0
+		&__wrap ul li
+			margin-top: 25px
+		&__wrap ul h3
+			font-size: 20px
+			margin: 0
+			margin-bottom: 20px
+		&__wrap li:nth-child(2) h3
+			margin-top: 10px
+			margin-bottom: 30px
+		&__mcad-list li:nth-child(2) span
+			margin-bottom: -10px
+		&__mcad-list li:nth-child(2)
+			margin-bottom: 35px
+		&__wrap li:nth-child(4) h3,
+		&__outside-list li:nth-child(2) h3
+			margin: 0
+		&__wrap ul img
+			height: auto
+			margin-right: 10px
+		&__wrap ul div
+			max-width: 639px
+		&__wrap ul p
+			font-size: 18px
+			max-width: 639px
+			margin: 0
+		&__wrap ul span
+			font-size: 20px
+			width: 330px
+			height: 72px
+			margin-top: 25px
+		&__subtext
+			font-size: 16px
+			padding-top: 40px
+			padding-bottom: 30px
+			max-width: 700px
+		&__subtext p
+			font-size: 16px
+		&__subtext img
+			margin-right: 10px
+			height: auto
+		&__region-text
+			margin-top: 50px
+		&__region-text p
+			font-size: 20px
+			margin: 35px 0
+			align-items: center
+		&__region-text img
+			height: auto
+		&__region-img img
+			width: auto
+			margin-right: 25px
+		&__region-img img:last-child
+			margin-right: 0
+		&__region-text-2
+			font-size: 18px
+
+@media (min-width: 1150px)
+	.delivery-payment-delivery
+		&__wrap > div
+			max-width: 1000px
+		&__wrap ul li
+			flex-direction: row
+			align-items: center
+		&__mcad-list li:first-child
+			align-items: flex-end
+		&__mcad-list li:nth-child(2)
+			align-items: flex-end
+		&__wrap ul span
+			margin: 0

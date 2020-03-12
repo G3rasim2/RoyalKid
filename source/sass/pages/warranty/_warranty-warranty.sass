@@ -1,0 +1,151 @@
+.warranty-warranty
+	background: #FFEFEA
+	padding-top: 40px
+	padding-bottom: 60px
+	&__block h1 br
+		display: none
+	&__text
+		font-size: 14px
+	&__text-toggle
+		font-size: 12px
+		color: #8E8E8E
+	&__text--off
+		display: none
+	&__text--on
+		display: block
+	&__contacts
+		margin-top: 30px
+	&__list
+		list-style: none
+		padding: 0
+		margin-top: 30px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__list li
+		display: flex
+		align-items: center
+		background: #fff
+		position: relative
+		padding: 20px
+		padding-left: 70px
+		border-radius: 10px
+		margin-bottom: 10px
+		width: 290px
+		height: 94px
+		margin-right: 10px
+	&__list span
+		position: absolute
+		top: calc(50% - 27px)
+		left: 10px
+		width: 54px
+		height: 54px
+		border: 10px solid #FFEFEA
+		border-radius: 50%
+	&__list li:nth-child(1) span
+		background: url(../img/marker.svg) no-repeat center
+		background-size: 23px
+	&__list li:nth-child(2) span
+		background: url(../img/phone-call.svg) no-repeat center
+	&__list li:nth-child(3) span
+		background: url(../img/email.svg) no-repeat center
+		background-size: 29px
+	&__list h3
+		font-size: 14px
+		margin: 0
+	&__list br
+		display: none
+	&__title
+		font-size: 16px
+	&__list p
+		font-size: 12px
+		margin: 0
+	&__list a
+		display: block
+		text-decoration: none
+		font-size: 12px
+		color: #413D43
+		margin: 0
+	&__wrap iframe
+		width: 100%
+		height: 376px
+
+@media (min-width: 1181px)
+	.warranty-warranty
+		padding-top: 130px
+		padding-bottom: 130px
+		&__wrap
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+		&__block
+			width: 55%
+			max-width: 682px
+		&__block h1 br
+			display: block
+		&__wrap iframe
+			width: 40%
+			height: 607px
+			margin-top: 5px
+		&__text
+			font-size: 18px
+			margin-top: 30px
+			margin-bottom: 47px
+		&__text-toggle
+			display: none
+		&__text--off
+			display: inline
+		&__list
+			justify-content: stretch
+			max-width: 649px
+		&__list li
+			padding: 30px
+			padding-left: 130px
+			width: 50%
+			height: 123px
+			margin-right: 0
+		&__list li:first-child
+			width: 100%
+			margin-bottom: 30px
+		&__list li:last-child
+			padding-left:
+		&__list li:nth-child(2)
+			border-top-right-radius: 0
+			border-bottom-right-radius: 0
+		&__list li:nth-child(3)
+			border-top-left-radius: 0
+			border-bottom-left-radius: 0
+		&__list span
+			top: calc(50% - 39px)
+			left: 30px
+			width: 78px
+			height: 78px
+			border: 15px solid #FFEFEA
+		&__list li:nth-child(1) span
+			background: url(../img/marker.svg) no-repeat center
+			background-size: 24px
+		&__list li:nth-child(2) span
+			background: url(../img/phone-call.svg) no-repeat center
+			background-size: 24px
+		&__list li:nth-child(3) span
+			background: url(../img/email.svg) no-repeat center
+			background-size: 33px
+		&__list h3
+			font-size: 16px
+			margin-bottom: 5px
+		&__list br
+			display: block
+		&__title
+			font-size: 20px
+		&__list p
+			font-size: 16px
+		&__list a
+			font-size: 16px
+
+@media (min-width: 1401px)
+	.warranty-warranty
+		&__block
+			width: 48%
+		&__wrap iframe
+			width: 51%
+			max-width: 821px

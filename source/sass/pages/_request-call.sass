@@ -1,0 +1,150 @@
+.request-call
+	position: fixed
+	width: 290px
+	top: calc(50% - 200px)
+	left: calc(50% - 145px)
+	background: #FFEFEA
+	border-radius: 10px
+	z-index: 102
+	display: none
+	&--active
+		display: block
+	&__wrap
+		padding: 20px
+		padding-bottom: 50px
+		display: flex
+		flex-direction: column
+	&__btn-close
+		width: 20px
+		height: 20px
+		padding: 0
+		border: none
+		background: transparent
+		position: relative
+		margin-left: auto
+	&__btn-close::before,
+	&__btn-close::after
+		content: ''
+		position: absolute
+		top: 9px
+		width: 20px
+		height: 2px
+		background: #442751
+	&__btn-close::before
+		right: 0
+		transform: rotate(45deg)
+	&__btn-close::after
+		left: 0
+		transform: rotate(-45deg)
+	&__wrap h1
+		width: 83%
+		margin-top: 15px
+	&__wrap p
+		font-size: 14px
+		margin-top: 5px
+	&__input
+		font-size: 12px
+		padding: 13px 20px
+		width: 100%
+		height: 50px
+		background: transparent
+		border-radius: 50px
+		border: 1px solid #B9B9B9
+		color: #442751
+		margin-bottom: 10px
+	&__input::placeholder
+		font-size: 12px
+		color: #442751
+	&__btn
+		font-size: 12px
+		color: #fff
+		border: none
+		padding: 13px 20px
+		width: 100%
+		height: 50px
+		background: #442751
+		border-radius: 50px
+		margin-top: 10px
+	&__wrap label
+		display: flex
+		margin-top: 10px
+		position: relative
+	&__wrap label p
+		margin: 0
+		padding-left: 20px
+		font-size: 12px
+		color: rgba(#1D3B3C, .55)
+	&__wrap label p a
+		color: rgba(#1D3B3C, .55)
+		font-weight: 500
+	&__wrap input[type="checkbox"] + span
+		position: absolute
+		top: 3px
+		left: 0
+		width: 17px
+		height: 17px
+		border-radius: 50%
+		border: 1px solid #442751
+	&__wrap input[type="checkbox"]:checked + span:before
+		content: ''
+		position: absolute
+		top: calc(50% - 5.5px)
+		left: calc(50% - 5.5px)
+		width: 11px
+		height: 11px
+		border-radius: 50%
+		background: #442751
+	&__overlay
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(#4D4848, .1)
+		z-index: 101
+		display: none
+	&__overlay--active
+		display: block
+
+@media (min-width: 900px)
+	.request-call
+		width: 632px
+		top: calc(50% - 323px)
+		left: calc(50% - 316px)
+		&__wrap
+			padding: 40px
+			padding-left: 60px
+			padding-bottom: 70px
+		&__wrap h1
+			width: auto
+			margin-top: 40px
+		&__wrap p
+			font-size: 18px
+			margin-top: 25px
+			margin-bottom: 30px
+			width: 78%
+		&__input
+			font-size: 18px
+			padding: 30px
+			margin-bottom: 20px
+			height: 63px
+		&__input::placeholder
+			font-size: 18px
+		&__btn
+			margin-top: 10px
+			font-size: 18px
+			padding: 20px
+			height: 71px
+		&__wrap label
+			margin-top: 20px
+		&__wrap label p
+			font-size: 14px
+			padding-left: 30px
+		&__wrap input[type="checkbox"] + span
+			width: 24px
+			height: 24px
+		&__wrap input[type="checkbox"]:checked + span:before
+			top: calc(50% - 8px)
+			left: calc(50% - 8px)
+			width: 16px
+			height: 16px

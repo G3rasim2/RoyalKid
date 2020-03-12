@@ -1,0 +1,138 @@
+.about-us
+	background: #FFEFEA
+	margin-top: 50px
+	&__wrap
+		padding-top: 50px
+		padding-bottom: 40px
+	&__text p
+		display: none
+		font-size: 14px
+	&__text p:nth-child(2)
+		display: block
+	&__text .about-us__p--on
+		display: block
+	&__open-text
+		color: #8E8E8E
+		font-size: 12px
+	&__photo
+		padding-top: 30px
+	&__list
+		list-style: none
+		padding: 0
+		padding-top: 0px
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__list li
+		display: flex
+		background-color: #FFFFFF
+		padding-top: 15px
+		padding-left: 10px
+		padding-right: 5px
+		padding-bottom: 15px
+		margin-bottom: 10px
+		border-radius: 10px
+		width: 290px
+		z-index: 100
+	&__list li:hover
+		box-shadow: 0 0 15px rgba(#000, .1)
+	&__list li h3
+		font-size: 14px
+		font-weight: 600
+		margin: 0
+	&__list li p
+		font-size: 12px
+		margin: 0
+		margin-top: 5px
+	&__list div
+		width: 80%
+	&__list span
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 53px
+		height: 53px
+		margin-right: 10px
+		background: #FFEFEA
+		border-radius: 50%
+	&__list img
+		height: 21px
+	&__photo .owl-carousel img
+		border-radius: 10px
+
+#about-us-carousel .owl-dots .owl-dot span
+	background: #C4C4C4
+#about-us-carousel .owl-dots .active span
+	background: #442751
+#about-us-carousel .owl-dots .owl-dot:hover span,
+#about-us-carousel .owl-dots .owl-dot:focus span
+	background: rgba(#442751, .5)
+
+
+@media (min-width: 900px)
+	.about-us
+		background: #FFEFEA
+		margin-top: 130px
+		padding-bottom: 90px
+		&__wrap
+			padding-top: 130px
+			position: relative
+		&__text
+			width: 400px
+		&__text p
+			display: block
+		&__open-text
+			display: none
+		&__photo
+			width: 408px
+			position: absolute
+			top: 110px
+			right: 0
+			overflow: hidden
+		&__photo .owl-carousel img
+			width: 400px
+		&__list
+			flex-direction: row
+			align-items: stretch
+			padding-top: 50px
+		&__list li
+			height: 100px
+			width: 29%
+			max-width: 399px
+			margin: 0
+			margin-right: 20px
+			padding: 20px 5px
+			padding-left: 10px
+		&__list li:first-child
+			width: 31%
+			max-width: 433px
+
+@media (min-width: 1300px)
+	.about-us
+		&__text
+			width: 600px
+		&__photo
+			width: 600px
+		&__photo .owl-carousel img
+			width: 600px
+		&__text p
+			font-size: 18px
+		&__list li
+			align-items: flex-end
+		&__list li h3
+			font-size: 18px
+		&__list li p
+			font-size: 16px
+		&__list li
+			height: auto
+			padding: 25px 5px
+			padding-left: 30px
+		&__list span
+			width: 78px
+			height: 78px
+			margin-right: 20px
+		&__list img
+			height: 32px
+		&__photo .owl-carousel .owl-dots
+			display: flex
+			justify-content: flex-end
